@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Heritage Showrooms & Boutiques | The Lyallpur Store · Ludhiana</title>
+  <meta name="description" content="Visit The Lyallpur Store showrooms in Ludhiana: Model Town Flagship, South City Experience Centre, Ghumar Mandi, and Deep Nagar. Pure desi ghee sweets crafted since 1975." />
+  <meta name="theme-color" content="#180306" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            maroon: { 900: '#180306', 800: '#27060B', 700: '#3A0F14' },
+            cream: { 100: '#F7F1E7', 200: '#EFE4D0', 300: '#E3D3B8' },
+            saffron: { 500: '#E5A72F', 600: '#C98F20' },
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+            script: ['"Caveat"', 'cursive', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      background-color: #F7F1E7;
+      color: #180306;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: clip;
+      -webkit-font-smoothing: antialiased;
+    }
+    .paper-cream {
+      background-color: #F7F1E7;
+      background-image: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(239, 228, 208, 0.4) 100%),
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+    }
+    .paper-maroon {
+      background-color: #180306;
+      background-image: radial-gradient(ellipse at 50% 20%, rgba(75, 22, 28, 0.45) 0%, rgba(24, 3, 6, 0.95) 75%);
+    }
+    .shadow-paper { box-shadow: 4px 4px 0 rgba(24, 3, 6, 0.85); }
+    .shadow-paper-sm { box-shadow: 2px 2px 0 rgba(24, 3, 6, 0.85); }
+    .shadow-paper-lg { box-shadow: 8px 8px 0 rgba(24, 3, 6, 0.9); }
+    .ticket-edge { border: 1.5px dashed #180306; }
+    .scalloped-badge {
+      clip-path: polygon(
+        50% 0%, 57% 5%, 65% 1%, 71% 8%, 79% 6%, 84% 14%, 92% 14%, 95% 23%, 
+        100% 26%, 100% 35%, 100% 41%, 97% 50%, 100% 59%, 100% 65%, 100% 74%, 
+        95% 77%, 92% 86%, 84% 86%, 79% 94%, 71% 92%, 65% 99%, 57% 95%, 
+        50% 100%, 43% 95%, 35% 99%, 29% 92%, 21% 94%, 16% 86%, 8% 86%, 
+        5% 77%, 0% 74%, 0% 65%, 0% 59%, 3% 50%, 0% 41%, 0% 35%, 0% 26%, 
+        5% 23%, 8% 14%, 16% 14%, 21% 6%, 29% 8%, 35% 1%, 43% 5%
+      );
+    }
+  </style>
+</head>
+<body class="paper-cream selection:bg-[#E5A72F] selection:text-[#180306]">
+
+  <!-- Top Scroll Progress Line -->
+  <div id="scrollProgress" class="fixed top-0 left-0 h-[3px] bg-[#E5A72F] z-50 transition-all duration-75 shadow-[0_0_8px_#E5A72F] pointer-events-none" style="width: 0%;"></div>
+
+  <!-- Announcement Bar -->
+  <div class="relative bg-[#180306] border-b border-[#F7F1E7]/10 text-[#F7F1E7] h-[30px] flex items-center justify-center px-4 text-[11px] tracking-wide select-none z-40 overflow-hidden">
+    <div class="flex items-center gap-2 font-medium opacity-90 truncate">
+      <i data-lucide="sparkles" class="w-3 h-3 text-[#E5A72F] shrink-0"></i>
+      <span class="truncate">Serving Ludhiana Across 4 Distinct Heritage Destinations · Pure Desi Ghee Since 1975</span>
+    </div>
+  </div>
+
+  <!-- Sticky Header -->
+  <header class="sticky top-0 left-0 right-0 z-40 bg-[#180306]/95 backdrop-blur-md border-b border-[#F7F1E7]/15 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="index.html" class="flex flex-col group select-none">
+        <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-[#F7F1E7] group-hover:text-[#E5A72F] transition-colors leading-tight">
+          The Lyallpur Store
+        </span>
+        <span class="text-[9px] tracking-[0.3em] font-sans uppercase text-[#E5A72F] font-semibold">
+          SINCE 1975 · LUDHIANA
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center space-x-7 select-none">
+        <a href="index.html" class="text-xs tracking-[0.14em] font-medium text-[#F7F1E7]/80 hover:text-[#E5A72F] transition-colors">HOME</a>
+        <a href="shop.html" class="text-xs tracking-[0.14em] font-medium text-[#F7F1E7]/80 hover:text-[#E5A72F] transition-colors">ONLINE STORE</a>
+        <a href="gallery.html" class="text-xs tracking-[0.14em] font-medium text-[#F7F1E7]/80 hover:text-[#E5A72F] transition-colors">GALLERY</a>
+        <a href="stores.html" class="text-xs tracking-[0.14em] font-bold text-[#E5A72F] border-b-2 border-[#E5A72F] pb-1">OUR STORES</a>
+        <a href="careers.html" class="text-xs tracking-[0.14em] font-medium text-[#F7F1E7]/80 hover:text-[#E5A72F] transition-colors">CAREERS</a>
+      </nav>
+
+      <div class="flex items-center space-x-3">
+        <a href="shop.html" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-[#F7F1E7]/50 text-[#F7F1E7] text-xs font-semibold uppercase tracking-wider hover:bg-[#E5A72F] hover:text-[#180306] hover:border-[#E5A72F] transition-all">
+          <span>ORDER SWEETS</span>
+          <span class="text-[11px]">→</span>
+        </a>
+        <button onclick="toggleCart()" aria-label="Cart" class="relative p-2 text-[#F7F1E7] hover:text-[#E5A72F] transition-colors rounded-full hover:bg-white/5 cursor-pointer">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          <span id="navCartBadge" class="absolute top-0.5 right-0.5 w-4 h-4 rounded-full bg-[#E5A72F] text-[#180306] font-sans text-[10px] font-bold flex items-center justify-center shadow-sm">
+            0
+          </span>
+        </button>
+        <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-[#F7F1E7] hover:text-[#E5A72F]">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#180306] border-t border-[#F7F1E7]/10 px-6 py-4 space-y-3">
+      <a href="index.html" class="block text-sm font-serif text-[#F7F1E7]/80 hover:text-[#E5A72F]">HOME</a>
+      <a href="shop.html" class="block text-sm font-serif text-[#F7F1E7]/80 hover:text-[#E5A72F]">ONLINE STORE</a>
+      <a href="gallery.html" class="block text-sm font-serif text-[#F7F1E7]/80 hover:text-[#E5A72F]">GALLERY</a>
+      <a href="stores.html" class="block text-sm font-serif font-bold text-[#E5A72F]">OUR STORES</a>
+      <a href="careers.html" class="block text-sm font-serif text-[#F7F1E7]/80 hover:text-[#E5A72F]">CAREERS</a>
+    </div>
+  </header>
+
+  <!-- STORE HERO SECTION -->
+  <section class="relative bg-[#180306] paper-maroon text-[#F7F1E7] py-16 sm:py-24 select-none border-b-4 border-[#E5A72F]/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#E5A72F]/40 bg-[#180306] text-[#E5A72F] text-xs font-mono tracking-widest font-bold mb-4">
+        ✦ FOUR ICONIC LOCATIONS IN PUNJAB ✦
+      </div>
+      <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-[#F7F1E7]">
+        COME MEET US IRL.
+      </h1>
+      <p class="font-serif italic text-base sm:text-2xl text-[#F7F1E7]/80 mt-3 max-w-2xl mx-auto">
+        "The sweets taste better when you know where the story lives."
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-8 mt-8 text-xs font-mono text-[#E5A72F]">
+        <span>✦ Model Town Flagship</span>
+        <span>✦ South City Gifting Lounge</span>
+        <span>✦ Ghumar Mandi Heritage</span>
+        <span>✦ Deep Nagar Boutique</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWROOM SELECTOR INTERACTIVE SECTION -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="bg-[#FAF7F2] rounded-3xl border-2 border-[#180306] shadow-paper-lg overflow-hidden p-6 sm:p-10 mb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: Store Locations List -->
+        <div class="lg:col-span-4 space-y-3" id="storesList">
+          <span class="text-xs font-mono font-bold tracking-widest text-[#180306] uppercase block mb-3">
+            SELECT DESTINATION (4)
+          </span>
+          <!-- Dynamic cards injected via JS -->
+        </div>
+
+        <!-- Right: Selected Store Showcase & Interactive Map -->
+        <div class="lg:col-span-8 flex flex-col space-y-6">
+          <!-- Store Card Details -->
+          <div id="storeDetailCard" class="bg-white p-6 sm:p-8 rounded-2xl border-2 border-[#180306] shadow-sm">
+            <!-- Dynamic Content -->
+          </div>
+
+          <!-- Embedded Map -->
+          <div class="relative w-full h-80 sm:h-96 rounded-2xl overflow-hidden border-2 border-[#180306] shadow-paper bg-[#EFE4D0]">
+            <iframe
+              id="storeMapFrame"
+              title="Store Map"
+              src="https://maps.google.com/maps?q=Lyallpur+Sweets+Model+Town+Ludhiana&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              class="w-full h-full border-0"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CONCIERGE & BESPOKE WEDDING CONSULTATION FORM -->
+    <div class="bg-[#FAF7F2] rounded-3xl border-2 border-[#180306] shadow-paper-lg p-6 sm:p-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- Left Copy -->
+        <div class="lg:col-span-5">
+          <span class="text-xs font-mono tracking-[0.25em] font-bold text-[#E4702A] uppercase block mb-1">
+            ✦ EDITORIAL CONCIERGE ✦
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-black text-[#180306] tracking-tight mb-4">
+            Planning something special?
+          </h2>
+          <p class="font-sans text-sm sm:text-base text-[#180306]/80 leading-relaxed mb-6">
+            Tell us what you are celebrating. Whether you need bespoke wedding sweet caskets, corporate Diwali hampers, or customized shagun boxes, our master concierge team will tailor every detail.
+          </p>
+
+          <div class="space-y-3 text-xs font-serif font-bold text-[#180306]">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-[#788A4A]"></i>
+              <span>Custom Gold Foil Monograms & Family Calligraphy</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-[#788A4A]"></i>
+              <span>Doorstep Tasting Appointment for Weddings</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-[#788A4A]"></i>
+              <span>Domestic & Overseas Airfreight Coordination</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Form -->
+        <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl border-2 border-[#180306] shadow-sm">
+          <form onsubmit="handleConsultationSubmit(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-mono font-bold uppercase tracking-wider text-[#180306] mb-1">Full Name *</label>
+                <input required id="formName" type="text" placeholder="e.g. Jasleen Kaur" class="w-full px-4 py-2.5 rounded-xl border border-[#180306]/20 text-sm focus:outline-none focus:border-[#180306]" />
+              </div>
+              <div>
+                <label class="block text-xs font-mono font-bold uppercase tracking-wider text-[#180306] mb-1">Contact Phone *</label>
+                <input required id="formPhone" type="tel" placeholder="+91 98140 XXXXX" class="w-full px-4 py-2.5 rounded-xl border border-[#180306]/20 text-sm focus:outline-none focus:border-[#180306]" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-mono font-bold uppercase tracking-wider text-[#180306] mb-1">Email Address</label>
+                <input id="formEmail" type="email" placeholder="name@domain.com" class="w-full px-4 py-2.5 rounded-xl border border-[#180306]/20 text-sm focus:outline-none focus:border-[#180306]" />
+              </div>
+              <div>
+                <label class="block text-xs font-mono font-bold uppercase tracking-wider text-[#180306] mb-1">Celebration Type</label>
+                <select id="formType" class="w-full px-4 py-2.5 rounded-xl border border-[#180306]/20 text-sm bg-white focus:outline-none focus:border-[#180306]">
+                  <option>Royal Wedding Trousseau</option>
+                  <option>Festive Corporate Gifting</option>
+                  <option>Shagun & Engagement Ceremony</option>
+                  <option>Overseas Express Delivery</option>
+                  <option>General Patrons Consultation</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase tracking-wider text-[#180306] mb-1">Event Date (Approximate)</label>
+              <input id="formDate" type="date" class="w-full px-4 py-2.5 rounded-xl border border-[#180306]/20 text-sm bg-white focus:outline-none focus:border-[#180306]" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase tracking-wider text-[#180306] mb-1">Bespoke Requirements / Notes</label>
+              <textarea id="formNotes" rows="3" placeholder="Tell us estimated guest count, favorite sweets, or delivery city..." class="w-full px-4 py-2.5 rounded-xl border border-[#180306]/20 text-sm focus:outline-none focus:border-[#180306]"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-full bg-[#180306] text-[#F7F1E7] font-serif font-bold text-sm uppercase tracking-wider hover:bg-[#E5A72F] hover:text-[#180306] transition-all shadow-paper cursor-pointer flex items-center justify-center gap-2">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>CONNECT WITH CONCIERGE VIA WHATSAPP →</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="relative bg-[#180306] text-[#F7F1E7] border-t-2 border-[#E5A72F]/30 pt-16 pb-12 select-none">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-[#F7F1E7]/10">
+        <div class="lg:col-span-5 space-y-4">
+          <span class="font-serif text-2xl sm:text-3xl font-black text-[#F7F1E7] block">
+            The Lyallpur Store
+          </span>
+          <p class="font-sans text-xs text-[#F7F1E7]/70 leading-relaxed max-w-md">
+            Established in 1975 in Ludhiana, Punjab. Master halwais crafting pure cow desi ghee sweets, signature chana barfi, dry fruit treats, and royal celebration hampers for over 50 years.
+          </p>
+          <div class="flex items-center gap-3 pt-2 text-[#E5A72F]">
+            <a href="https://instagram.com/thelyallpurstore" target="_blank" rel="noreferrer" class="p-2 border border-[#E5A72F]/30 rounded-full hover:bg-[#E5A72F] hover:text-[#180306] transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+            <a href="https://facebook.com/thelyallpurstore" target="_blank" rel="noreferrer" class="p-2 border border-[#E5A72F]/30 rounded-full hover:bg-[#E5A72F] hover:text-[#180306] transition-colors"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+            <a href="https://wa.me/919814000000" target="_blank" rel="noreferrer" class="p-2 border border-[#E5A72F]/30 rounded-full hover:bg-[#E5A72F] hover:text-[#180306] transition-colors"><i data-lucide="phone" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-3">
+          <span class="text-xs font-mono font-bold tracking-widest text-[#E5A72F] uppercase block">QUICK LINKS</span>
+          <ul class="space-y-2 text-xs font-sans text-[#F7F1E7]/80">
+            <li><a href="index.html" class="hover:text-[#E5A72F] transition-colors">Home Journey</a></li>
+            <li><a href="shop.html" class="hover:text-[#E5A72F] transition-colors">Online Sweet Store</a></li>
+            <li><a href="gallery.html" class="hover:text-[#E5A72F] transition-colors">Artisanal Gallery</a></li>
+            <li><a href="stores.html" class="text-[#E5A72F] font-bold">Showroom Locations</a></li>
+            <li><a href="careers.html" class="hover:text-[#E5A72F] transition-colors">Careers & Kitchen Openings</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-4 space-y-3">
+          <span class="text-xs font-mono font-bold tracking-widest text-[#E5A72F] uppercase block">FLAGSHIP HEADQUARTERS</span>
+          <div class="text-xs font-sans text-[#F7F1E7]/80 space-y-1.5">
+            <p>519-R, Model Town Market, Ludhiana, Punjab 141002</p>
+            <p class="font-mono text-[#E5A72F] font-bold">+91 161 240 2200 / +91 98140 00000</p>
+            <p>Direct Orders: orders@lyallpursweets.in</p>
+            <p class="pt-2 text-[11px] text-[#F7F1E7]/50 font-mono">FSSAI Lic. No: 12117801000234</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-[#F7F1E7]/60 font-mono gap-4">
+        <span>© 1975–2026 The Lyallpur Store. All Rights Reserved.</span>
+        <span>Crafted with Pure Desi Ghee & Tradition.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <div id="cartBackdrop" onclick="toggleCart()" class="fixed inset-0 bg-[#180306]/70 backdrop-blur-xs z-50 hidden opacity-0 transition-opacity duration-300"></div>
+  <aside id="cartDrawer" class="fixed top-0 right-0 bottom-0 w-full max-w-md bg-[#F7F1E7] paper-cream z-50 border-l-2 border-[#180306] shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-6 border-b border-[#180306]/15 flex items-center justify-between bg-[#180306] text-[#F7F1E7]">
+      <div class="flex items-center gap-2">
+        <i data-lucide="shopping-bag" class="w-5 h-5 text-[#E5A72F]"></i>
+        <h3 class="font-serif text-lg font-black tracking-tight">Your Sweet Box</h3>
+      </div>
+      <button onclick="toggleCart()" class="p-1.5 rounded-full hover:bg-white/10 transition-colors cursor-pointer">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <div id="cartItemsList" class="flex-1 overflow-y-auto p-6 space-y-4">
+      <!-- Injected via JS -->
+    </div>
+
+    <div class="p-6 bg-white border-t border-[#180306]/15 space-y-4">
+      <div class="flex items-center justify-between font-serif text-lg font-bold text-[#180306]">
+        <span>Total Payable:</span>
+        <span id="cartTotalPrice" class="font-mono text-[#E4702A]">₹0</span>
+      </div>
+      <button onclick="checkoutWhatsApp()" class="w-full py-3.5 rounded-full bg-[#180306] text-[#F7F1E7] font-serif font-bold text-sm uppercase tracking-wider hover:bg-[#E5A72F] hover:text-[#180306] transition-all shadow-paper cursor-pointer flex items-center justify-center gap-2">
+        <span>PROCEED TO WHATSAPP DISPATCH</span>
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Stores Data & Logic -->
+  <script>
+    const STORES = [
+      {
+        id: 'model-town',
+        name: 'Model Town (Flagship)',
+        isFlagship: true,
+        address: '519-R, Model Town Market, near Mint Ghumeri Chowk',
+        area: 'Model Town',
+        city: 'Ludhiana, Punjab',
+        pincode: '141002',
+        timings: '8:00 AM – 10:00 PM (Daily)',
+        phone: '+91 161 240 2200',
+        specialty: 'Famous for pure desi ghee preparations, morning Kachori, hot jalebi, and bespoke gifting.',
+        ambiance: 'Our premier heritage destination with high ceilings, warm teakwood displays, and live sweet counter.',
+        mapQuery: 'Lyallpur Sweets Model Town Ludhiana',
+        image: 'assets/images/lyallpur_store_facade_1789498231205.jpg'
+      },
+      {
+        id: 'south-city',
+        name: 'South City Experience Centre',
+        isFlagship: false,
+        address: 'Galleria Arcade, South City Road, Ayali Kalan',
+        area: 'South City',
+        city: 'Ludhiana, Punjab',
+        pincode: '141027',
+        timings: '9:00 AM – 10:30 PM (Daily)',
+        phone: '+91 161 245 8899',
+        specialty: 'Bespoke wedding trousseau boxes, corporate hamper lounge, and handcrafted cookies.',
+        ambiance: 'A modern luxury mithai salon with dedicated gifting consultancies and valet parking.',
+        mapQuery: 'Lyallpur Sweets South City Ludhiana',
+        image: 'assets/images/lyallpur_gifting_box_1789498201866.jpg'
+      },
+      {
+        id: 'ghumar-mandi',
+        name: 'Ghumar Mandi Showroom',
+        isFlagship: false,
+        address: 'Aarti Chowk, Main Market, Ghumar Mandi',
+        area: 'Ghumar Mandi',
+        city: 'Ludhiana, Punjab',
+        pincode: '141001',
+        timings: '8:30 AM – 10:00 PM (Daily)',
+        phone: '+91 161 242 7711',
+        specialty: 'Freshly roasted Chana Barfi, Kalakand, Masala Namak Para, and Punjabi Mathi.',
+        ambiance: 'A bustling traditional showroom in the commercial heart of Ludhiana.',
+        mapQuery: 'Lyallpur Sweets Ghumar Mandi Ludhiana',
+        image: 'assets/images/lyallpur_desi_ghee_1789498186551.jpg'
+      },
+      {
+        id: 'deep-nagar',
+        name: 'Deep Nagar Boutique',
+        isFlagship: false,
+        address: 'SCF 14, Main Commercial Complex, Deep Nagar',
+        area: 'Deep Nagar',
+        city: 'Ludhiana, Punjab',
+        pincode: '141001',
+        timings: '8:30 AM – 9:30 PM (Daily)',
+        phone: '+91 161 244 5566',
+        specialty: 'Seasonal winter gachak, dry fruit boxes, evening savouries, and express pickups.',
+        ambiance: 'An intimate neighborhood sweet boutique designed for rapid gifting and fresh evening snacks.',
+        mapQuery: 'Lyallpur Sweets Deep Nagar Ludhiana',
+        image: 'assets/images/lyallpur_craft_moment_1789498216459.jpg'
+      }
+    ];
+
+    let selectedStoreId = 'model-town';
+
+    function renderStoresList() {
+      const container = document.getElementById('storesList');
+      container.innerHTML = `
+        <span class="text-xs font-mono font-bold tracking-widest text-[#180306] uppercase block mb-3">
+          SELECT DESTINATION (${STORES.length})
+        </span>
+      ` + STORES.map((st, idx) => {
+        const isSelected = st.id === selectedStoreId;
+        return `
+          <div
+            onclick="selectStore('${st.id}')"
+            class="p-4 rounded-xl border-2 cursor-pointer transition-all ${
+              isSelected
+                ? 'bg-[#180306] text-[#F7F1E7] border-[#180306] shadow-paper-sm'
+                : 'bg-white text-[#180306] border-[#180306]/20 hover:border-[#180306]'
+            }"
+          >
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold ${isSelected ? 'text-[#E5A72F]' : 'text-[#E4702A]'}">
+                0${idx + 1}
+              </span>
+              ${st.isFlagship ? `
+                <span class="text-[9px] font-mono px-2 py-0.5 rounded-full font-bold uppercase ${
+                  isSelected ? 'bg-[#E5A72F] text-[#180306]' : 'bg-[#180306] text-[#F7F1E7]'
+                }">
+                  PURE FLAGSHIP
+                </span>
+              ` : ''}
+            </div>
+            <h4 class="font-serif font-black text-base sm:text-lg tracking-tight mt-1">
+              ${st.name}
+            </h4>
+            <p class="text-xs font-sans line-clamp-1 mt-0.5 ${isSelected ? 'text-[#F7F1E7]/70' : 'text-[#180306]/70'}">
+              ${st.address}
+            </p>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderSelectedStore() {
+      const store = STORES.find(s => s.id === selectedStoreId) || STORES[0];
+      const detailContainer = document.getElementById('storeDetailCard');
+      const mapFrame = document.getElementById('storeMapFrame');
+
+      detailContainer.innerHTML = `
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="md:col-span-5 relative aspect-[4/3] rounded-xl overflow-hidden border border-[#180306]/30 bg-[#180306]">
+            <img src="${store.image}" alt="${store.name}" class="w-full h-full object-cover" />
+          </div>
+          <div class="md:col-span-7 space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="text-[10px] font-mono text-[#E4702A] font-bold uppercase tracking-widest">
+                ${store.area}
+              </span>
+              ${store.isFlagship ? `
+                <span class="bg-[#180306] text-[#E5A72F] text-[9px] font-mono px-2 py-0.5 rounded-full font-bold">
+                  ORIGIN SHOWROOM
+                </span>
+              ` : ''}
+            </div>
+
+            <h3 class="font-serif text-2xl font-black text-[#180306]">
+              ${store.name}
+            </h3>
+
+            <div class="space-y-1.5 text-xs font-sans text-[#180306]/85">
+              <p class="flex items-start gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4 text-[#E4702A] shrink-0 mt-0.5"></i>
+                <span>${store.address}, ${store.city} - ${store.pincode}</span>
+              </p>
+              <p class="flex items-center gap-2">
+                <i data-lucide="clock" class="w-4 h-4 text-[#E4702A] shrink-0"></i>
+                <span>${store.timings}</span>
+              </p>
+              <p class="flex items-center gap-2">
+                <i data-lucide="phone" class="w-4 h-4 text-[#E4702A] shrink-0"></i>
+                <span class="font-mono font-bold">${store.phone}</span>
+              </p>
+            </div>
+
+            <p class="text-xs font-serif italic text-[#180306]/75 pt-1">
+              "${store.specialty}"
+            </p>
+
+            <div class="pt-2">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(store.mapQuery)}"
+                target="_blank"
+                rel="noreferrer"
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#180306] text-[#F7F1E7] font-serif font-bold text-xs uppercase tracking-wider hover:bg-[#E5A72F] hover:text-[#180306] transition-colors shadow-paper"
+              >
+                <i data-lucide="navigation" class="w-3.5 h-3.5"></i>
+                <span>GET DIRECTIONS ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+
+      mapFrame.src = `https://maps.google.com/maps?q=${encodeURIComponent(store.mapQuery)}&t=&z=14&ie=UTF8&iwloc=&output=embed`;
+      lucide.createIcons();
+    }
+
+    function selectStore(id) {
+      selectedStoreId = id;
+      renderStoresList();
+      renderSelectedStore();
+    }
+
+    function handleConsultationSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('formName').value;
+      const phone = document.getElementById('formPhone').value;
+      const email = document.getElementById('formEmail').value;
+      const type = document.getElementById('formType').value;
+      const date = document.getElementById('formDate').value;
+      const notes = document.getElementById('formNotes').value;
+
+      const message = `*NEW CONSULTATION ENQUIRY - THE LYALLPUR STORE*\n\n` +
+        `*Name:* ${name}\n` +
+        `*Phone:* ${phone}\n` +
+        `*Email:* ${email || 'Not provided'}\n` +
+        `*Type:* ${type}\n` +
+        `*Event Date:* ${date || 'Flexible'}\n` +
+        `*Notes:* ${notes || 'None'}`;
+
+      window.open(`https://wa.me/919814000000?text=${encodeURIComponent(message)}`, '_blank');
+      alert('Thank you! Redirecting you to WhatsApp to connect with our master concierge.');
+    }
+
+    // Scroll progress line
+    window.addEventListener('scroll', () => {
+      const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = scrollTotal > 0 ? (window.scrollY / scrollTotal) * 100 : 0;
+      document.getElementById('scrollProgress').style.width = progress + '%';
+    });
+
+    // Mobile Menu
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Shared Cart Drawer
+    let cart = JSON.parse(localStorage.getItem('lyallpur_cart') || '[]');
+
+    function updateCartBadge() {
+      const totalCount = cart.reduce((acc, item) => acc + item.quantity, 0);
+      document.getElementById('navCartBadge').innerText = totalCount;
+    }
+
+    function toggleCart() {
+      const drawer = document.getElementById('cartDrawer');
+      const backdrop = document.getElementById('cartBackdrop');
+      const isClosed = drawer.classList.contains('translate-x-full');
+
+      if (isClosed) {
+        renderCartItems();
+        backdrop.classList.remove('hidden');
+        setTimeout(() => backdrop.classList.remove('opacity-0'), 10);
+        drawer.classList.remove('translate-x-full');
+      } else {
+        backdrop.classList.add('opacity-0');
+        drawer.classList.add('translate-x-full');
+        setTimeout(() => backdrop.classList.add('hidden'), 300);
+      }
+    }
+
+    function renderCartItems() {
+      const container = document.getElementById('cartItemsList');
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="h-64 flex flex-col items-center justify-center text-center">
+            <i data-lucide="package-open" class="w-12 h-12 text-[#180306]/30 mb-3"></i>
+            <p class="font-serif text-lg font-bold text-[#180306]">Your sweet box is empty</p>
+            <p class="text-xs text-[#180306]/60 mt-1">Explore our pure desi ghee catalogue.</p>
+            <a href="shop.html" class="mt-4 px-6 py-2 rounded-full bg-[#180306] text-[#F7F1E7] text-xs font-serif font-bold uppercase tracking-wider hover:bg-[#E5A72F] hover:text-[#180306] transition-colors">
+              Browse Sweets →
+            </a>
+          </div>
+        `;
+        document.getElementById('cartTotalPrice').innerText = '₹0';
+        lucide.createIcons();
+        return;
+      }
+
+      let total = 0;
+      container.innerHTML = cart.map(item => {
+        const itemTotal = item.price * item.quantity;
+        total += itemTotal;
+        return `
+          <div class="flex items-center gap-4 bg-white p-3.5 rounded-xl border border-[#180306]/15 shadow-sm">
+            <img src="${item.image}" alt="${item.name}" class="w-16 h-16 rounded-lg object-cover border border-[#180306]/10" />
+            <div class="flex-1 min-w-0">
+              <h4 class="font-serif font-bold text-sm text-[#180306] truncate">${item.name}</h4>
+              <p class="text-[11px] font-mono text-[#180306]/60">${item.weight} · ₹${item.price}</p>
+              <div class="flex items-center gap-3 mt-2">
+                <div class="flex items-center border border-[#180306]/20 rounded-md bg-[#FAF7F2]">
+                  <button onclick="changeCartQty('${item.id}', '${item.weight}', -1)" class="px-2 py-0.5 text-xs hover:bg-[#180306] hover:text-white transition-colors">-</button>
+                  <span class="px-2 text-xs font-mono font-bold">${item.quantity}</span>
+                  <button onclick="changeCartQty('${item.id}', '${item.weight}', 1)" class="px-2 py-0.5 text-xs hover:bg-[#180306] hover:text-white transition-colors">+</button>
+                </div>
+                <button onclick="removeFromCart('${item.id}', '${item.weight}')" class="text-[11px] text-red-600 hover:underline">Remove</button>
+              </div>
+            </div>
+            <div class="text-right font-mono font-bold text-sm text-[#E4702A]">
+              ₹${itemTotal}
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      document.getElementById('cartTotalPrice').innerText = '₹' + total;
+      lucide.createIcons();
+    }
+
+    function changeCartQty(id, weight, delta) {
+      const idx = cart.findIndex(i => i.id === id && i.weight === weight);
+      if (idx !== -1) {
+        cart[idx].quantity += delta;
+        if (cart[idx].quantity <= 0) {
+          cart.splice(idx, 1);
+        }
+        localStorage.setItem('lyallpur_cart', JSON.stringify(cart));
+        updateCartBadge();
+        renderCartItems();
+      }
+    }
+
+    function removeFromCart(id, weight) {
+      cart = cart.filter(i => !(i.id === id && i.weight === weight));
+      localStorage.setItem('lyallpur_cart', JSON.stringify(cart));
+      updateCartBadge();
+      renderCartItems();
+    }
+
+    function checkoutWhatsApp() {
+      if (cart.length === 0) return;
+      let orderLines = cart.map(i => `• ${i.name} (${i.weight}) x ${i.quantity} = ₹${i.price * i.quantity}`).join('\n');
+      let total = cart.reduce((acc, i) => acc + (i.price * i.quantity), 0);
+      let text = `*NEW ORDER - THE LYALLPUR STORE*\n\n` +
+        `Hello, I would like to order fresh pure desi ghee sweets:\n\n` +
+        orderLines + `\n\n` +
+        `*Total Amount:* ₹${total}\n\n` +
+        `Please confirm delivery time and dispatch details to Ludhiana / Domestic courier.`;
+      window.open(`https://wa.me/919814000000?text=${encodeURIComponent(text)}`, '_blank');
+    }
+
+    // Init
+    document.addEventListener('DOMContentLoaded', () => {
+      renderStoresList();
+      renderSelectedStore();
+      updateCartBadge();
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>

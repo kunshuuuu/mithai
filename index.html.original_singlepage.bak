@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Lyallpur Store | Authentic Pure Desi Ghee Sweets & Heritage Mithai</title>
+  <meta name="description" content="Award-winning editorial heritage e-commerce destination for The Lyallpur Store. Handcrafted since 1975 in Ludhiana with 100% pure cow desi ghee." />
+  <meta name="theme-color" content="#180306" />
+
+  <!-- Google Fonts: Didone Serif, Clean Sans, and Handwritten Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            maroon: {
+              900: '#180306',
+              800: '#27060B',
+              700: '#3A0F14',
+              600: '#4B161C',
+              500: '#6B1F27',
+            },
+            cream: {
+              100: '#F7F1E7',
+              200: '#EFE4D0',
+              300: '#E3D3B8',
+            },
+            saffron: {
+              500: '#E5A72F',
+              600: '#C98F20',
+            },
+            clay: {
+              400: '#B9764F',
+            },
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+            script: ['"Caveat"', 'cursive', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --maroon-900: #180306;
+      --cream-100: #F7F1E7;
+      --saffron-500: #E5A72F;
+    }
+
+    body {
+      background-color: #180306;
+      color: #180306;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: clip;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    ::selection {
+      background-color: #E5A72F;
+      color: #180306;
+    }
+
+    /* Paper Textures */
+    .paper-maroon {
+      background-color: #180306;
+      background-image: 
+        radial-gradient(ellipse at 50% 20%, rgba(75, 22, 28, 0.45) 0%, rgba(24, 3, 6, 0.95) 75%),
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.045'/%3E%3C/svg%3E");
+    }
+
+    .paper-cream {
+      background-color: #F7F1E7;
+      background-image: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(239, 228, 208, 0.4) 100%),
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+    }
+
+    .paisley-faint {
+      background-image: radial-gradient(circle at 10% 20%, rgba(24, 3, 6, 0.03) 0, transparent 40%),
+                        radial-gradient(circle at 90% 80%, rgba(24, 3, 6, 0.03) 0, transparent 40%),
+                        url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 15 C75 15, 95 30, 95 55 C95 85, 60 105, 60 105 C60 105, 25 85, 25 55 C25 30, 45 15, 60 15 Z M60 30 C50 30, 40 40, 40 55 C40 70, 60 85, 60 85 C60 85, 80 70, 80 55 C80 40, 70 30, 60 30 Z' fill='%23180306' fill-opacity='0.02'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+    }
+
+    .paisley-maroon-dark {
+      background-image: url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 15 C75 15, 95 30, 95 55 C95 85, 60 105, 60 105 C60 105, 25 85, 25 55 C25 30, 45 15, 60 15 Z' fill='%23F7F1E7' fill-opacity='0.03'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+    }
+
+    /* Hard Paper Drop Shadows */
+    .shadow-paper {
+      box-shadow: 4px 4px 0 rgba(24, 3, 6, 0.85);
+    }
+    .shadow-paper-sm {
+      box-shadow: 2px 2px 0 rgba(24, 3, 6, 0.85);
+    }
+    .shadow-paper-lg {
+      box-shadow: 8px 8px 0 rgba(24, 3, 6, 0.9);
+    }
+
+    /* Badge & Sticker Shapes */
+    .scalloped-badge {
+      clip-path: polygon(
+        50% 0%, 57% 5%, 65% 1%, 71% 8%, 79% 6%, 84% 14%, 92% 14%, 95% 23%, 
+        100% 26%, 100% 35%, 100% 41%, 97% 50%, 100% 59%, 100% 65%, 100% 74%, 
+        95% 77%, 92% 86%, 84% 86%, 79% 94%, 71% 92%, 65% 99%, 57% 95%, 
+        50% 100%, 43% 95%, 35% 99%, 29% 92%, 21% 94%, 16% 86%, 8% 86%, 
+        5% 77%, 0% 74%, 0% 65%, 0% 59%, 3% 50%, 0% 41%, 0% 35%, 0% 26%, 
+        5% 23%, 8% 14%, 16% 14%, 21% 6%, 29% 8%, 35% 1%, 43% 5%
+      );
+    }
+
+    .starburst-badge {
+      clip-path: polygon(
+        50% 0%, 63% 13%, 81% 5%, 86% 24%, 100% 27%, 95% 45%, 100% 63%, 86% 69%, 
+        85% 88%, 66% 87%, 50% 100%, 35% 87%, 16% 89%, 14% 69%, 0% 63%, 5% 45%, 
+        0% 27%, 14% 23%, 17% 5%, 36% 12%
+      );
+    }
+
+    .ticket-edge {
+      border: 1.5px dashed #180306;
+    }
+
+    /* Marquee Animation */
+    @keyframes marqueeLeft {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
+    }
+    @keyframes marqueeRight {
+      0% { transform: translate3d(-50%, 0, 0); }
+      100% { transform: translate3d(0, 0, 0); }
+    }
+
+    .animate-marquee-left {
+      display: flex;
+      width: max-content;
+      animation: marqueeLeft 36s linear infinite;
+    }
+    .animate-marquee-right {
+      display: flex;
+      width: max-content;
+      animation: marqueeRight 40s linear infinite;
+    }
+    .animate-marquee-left:hover, .animate-marquee-right:hover {
+      animation-play-state: paused;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 7px; height: 7px; }
+    ::-webkit-scrollbar-track { background: #180306; }
+    ::-webkit-scrollbar-thumb { background: #E5A72F; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #C98F20; }
+  </style>
+</head>
+<body class="selection:bg-[#E5A72F] selection:text-[#180306]">
+
+  <!-- ================= TOP 3PX SCROLL PROGRESS LINE ================= -->
+  <div id="scrollProgress" class="fixed top-0 left-0 h-[3px] bg-[#E5A72F] z-50 transition-all duration-75 shadow-[0_0_8px_#E5A72F] pointer-events-none" style="width: 0%;"></div>
+
+  <!-- ================= GRAND CURTAIN-OPENING LOADING SCREEN ================= -->
+  <div id="openingCurtains" class="fixed inset-0 z-50 overflow-hidden pointer-events-auto select-none transition-opacity duration-700">
+    <!-- Left Curtain -->
+    <div id="leftCurtain" class="absolute top-0 left-0 bottom-0 w-1/2 bg-[#180306] paper-maroon border-r border-[#E5A72F]/20 transition-transform duration-1000 ease-[cubic-bezier(0.76,0,0.24,1)] z-20">
+      <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/30 pointer-events-none"></div>
+    </div>
+    <!-- Right Curtain -->
+    <div id="rightCurtain" class="absolute top-0 right-0 bottom-0 w-1/2 bg-[#180306] paper-maroon border-l border-[#E5A72F]/20 transition-transform duration-1000 ease-[cubic-bezier(0.76,0,0.24,1)] z-20">
+      <div class="absolute inset-0 bg-gradient-to-l from-black/40 via-transparent to-black/30 pointer-events-none"></div>
+    </div>
+    <!-- Center Stack -->
+    <div id="curtainContent" class="absolute inset-0 z-30 flex flex-col items-center justify-center p-6 text-center transition-all duration-500">
+      <button onclick="skipIntro()" class="absolute top-6 right-6 text-xs text-[#F7F1E7]/60 hover:text-[#E5A72F] uppercase tracking-widest font-sans transition-colors cursor-pointer py-1 px-3 border border-[#F7F1E7]/20 rounded-full">
+        Skip Intro ✕
+      </button>
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="sparkles" class="w-4 h-4 text-[#E5A72F]"></i>
+        <span class="font-serif text-[#F7F1E7]/80 text-xs sm:text-sm tracking-[0.25em] uppercase font-semibold">
+          THE LYALLPUR STORE
+        </span>
+        <i data-lucide="sparkles" class="w-4 h-4 text-[#E5A72F]"></i>
+      </div>
+      <div class="relative my-2">
+        <h1 class="font-serif text-6xl sm:text-8xl md:text-9xl font-black text-[#F7F1E7] tracking-tight leading-none drop-shadow-2xl">
+          1975
+        </h1>
+        <div class="absolute -top-4 -right-10 sm:-right-14 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#E5A72F] text-[#180306] flex items-center justify-center shadow-paper p-1 text-center font-serif text-[8px] sm:text-[9px] font-bold uppercase rotate-12">
+          <span>PURE DESI GHEE</span>
+        </div>
+      </div>
+      <p class="font-serif italic text-sm sm:text-base text-[#F7F1E7]/70 mt-3 max-w-md">
+        "A sweet story, still being written."
+      </p>
+      <div id="cyclingWord" class="h-6 mt-6 text-xs sm:text-sm tracking-[0.3em] font-semibold text-[#E5A72F] uppercase">
+        ✦ PURE DESI GHEE ✦
+      </div>
+      <div class="w-56 sm:w-72 mt-8">
+        <div class="w-full h-1 bg-[#F7F1E7]/15 rounded-full overflow-hidden">
+          <div id="curtainProgress" class="h-full bg-gradient-to-r from-[#E5A72F] to-[#E4702A] rounded-full transition-all duration-75" style="width: 0%;"></div>
+        </div>
+        <div class="flex justify-between items-center mt-2 text-[10px] sm:text-xs text-[#F7F1E7]/50 font-mono">
+          <span>HARVESTING PURITY</span>
+          <span id="progressText" class="text-[#E5A72F] font-bold">0%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TOP ANNOUNCEMENT STRIP ================= -->
+  <div class="relative bg-[#180306] border-b border-[#F7F1E7]/10 text-[#F7F1E7] h-[28px] flex items-center justify-center px-4 text-[11px] tracking-wide select-none z-40 overflow-hidden">
+    <div class="flex items-center gap-2 font-medium opacity-90 truncate">
+      <i data-lucide="sparkles" class="w-3 h-3 text-[#E5A72F] shrink-0"></i>
+      <span class="truncate">Handcrafted in Ludhiana with 100% Pure Desi Ghee · Worldwide Express Gifting</span>
+      <a href="#online-store-section" class="text-[#E5A72F] underline hover:text-[#F7F1E7] transition-colors ml-1 font-semibold shrink-0">
+        Explore Gifting →
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= EDITORIAL STICKY NAVIGATION HEADER ================= -->
+  <header id="mainNavbar" class="sticky top-0 left-0 right-0 z-40 transition-all duration-300 bg-transparent py-5 sm:py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="cursor-pointer group flex items-center gap-2 select-none">
+        <div class="flex flex-col">
+          <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-[#F7F1E7] group-hover:text-[#E5A72F] transition-colors leading-tight">
+            The Lyallpur Store
+          </span>
+          <span class="text-[9px] tracking-[0.3em] font-sans uppercase text-[#E5A72F] font-semibold">
+            SINCE 1975 · LUDHIANA
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center space-x-7 select-none">
+        <a href="#hero-section" class="text-xs tracking-[0.14em] font-medium text-[#E5A72F] font-bold">HOME</a>
+        <a href="#online-store-section" class="text-xs tracking-[0.14em] font-medium text-[#F7F1E7]/80 hover:text-[#F7F1E7] transition-colors">ONLINE STORE</a>
+        <a href="#heritage-section" class="text-xs tracking-[0.14em] font-medium text-[#F7F1E7]/80 hover:text-[#F7F1E7] transition-colors">HERITAGE</a>
+        <a href="#gallery-section" class="text-xs tracking-[0.14em] font-medium text-[#F7F1E7]/80 hover:text-[#F7F1E7] transition-colors">GALLERY</a>
+        <a href="#our-stores-section" class="text-xs tracking-[0.14em] font-medium text-[#F7F1E7]/80 hover:text-[#F7F1E7] transition-colors">OUR STORES</a>
+      </nav>
+
+      <!-- Right Group -->
+      <div class="flex items-center space-x-3 sm:space-x-4">
+        <a href="#online-store-section" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-[#F7F1E7]/50 text-[#F7F1E7] text-xs font-semibold uppercase tracking-wider hover:bg-[#E5A72F] hover:text-[#180306] hover:border-[#E5A72F] transition-all cursor-pointer shadow-sm">
+          <span>ORDER SWEETS</span>
+          <span class="text-[11px]">→</span>
+        </a>
+
+        <button onclick="toggleCart()" aria-label="Cart" class="relative p-2 text-[#F7F1E7] hover:text-[#E5A72F] transition-colors rounded-full hover:bg-white/5 cursor-pointer">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          <span id="navCartBadge" class="absolute top-0.5 right-0.5 w-4 h-4 rounded-full bg-[#E5A72F] text-[#180306] font-sans text-[10px] font-bold flex items-center justify-center shadow-sm">
+            0
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN SCROLL JOURNEY ================= -->
+  <main class="relative z-10">
+
+    <!-- 1. HERO SCROLL TRACK (500VH APPLE-STYLE PINNED CANVAS SEQUENCE) -->
+    <section id="hero-track" class="relative w-full bg-[#180306]" style="height: 500vh;">
+      <div id="hero-sticky" class="sticky top-0 h-[100svh] w-full bg-[#180306] paper-maroon text-[#F7F1E7] overflow-hidden flex flex-col justify-between pt-4 sm:pt-6 pb-8 sm:pb-12 select-none z-10">
+        <!-- Scroll Sequence Background Canvas -->
+        <canvas id="heroFrameCanvas" class="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none opacity-90"></canvas>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#180306]/92 via-[#180306]/65 to-[#180306]/20 pointer-events-none z-1"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_45%_35%,rgba(75,22,28,0.5)_0%,transparent_65%)] pointer-events-none z-1"></div>
+        <div id="heroHandoffVeil" class="absolute inset-0 bg-[#180306] pointer-events-none z-2 opacity-0 transition-opacity duration-300"></div>
+
+        <!-- Rotated Edge Micro-Text -->
+        <div class="hidden xl:block absolute left-6 top-1/2 -translate-y-1/2 -rotate-90 origin-left text-[10px] tracking-[0.35em] text-[#E5A72F]/60 font-mono uppercase z-20">
+          PURE DESI GHEE · PUNJAB · 1975
+        </div>
+        <div class="hidden xl:block absolute right-6 top-1/2 -translate-y-1/2 rotate-90 origin-right text-[10px] tracking-[0.35em] text-[#E5A72F]/60 font-mono uppercase z-20">
+          LUDHIANA HERITAGE CONFECTIONERY
+        </div>
+
+        <!-- Upper-Right Rotated Sweet Shop Ticket (Video Match) -->
+        <div class="absolute top-6 sm:top-10 right-4 sm:right-12 md:right-20 z-25 transition-transform duration-300 hover:rotate-0 hover:scale-105 pointer-events-none sm:pointer-events-auto">
+          <div class="ticket-edge bg-[#E5A72F] text-[#180306] p-3 sm:p-3.5 rounded-md shadow-paper rotate-12 w-44 sm:w-56 cursor-pointer select-none">
+            <div class="flex justify-between items-center text-[8px] sm:text-[9px] font-mono tracking-widest border-b border-[#180306]/30 pb-1 mb-1 font-bold">
+              <span id="heroTicketLot">LOT #01975</span>
+              <span>PURE DESI</span>
+            </div>
+            <span class="font-serif text-xs sm:text-sm font-black tracking-tight block">
+              The Lyallpur Store
+            </span>
+            <span class="text-[8px] sm:text-[9px] font-sans tracking-wider text-[#180306]/80 mt-0.5 block">
+              100% PURE COW DESI GHEE
+            </span>
+          </div>
+        </div>
+
+        <!-- Main Poster Composition -->
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full my-auto z-20 pt-2 pb-6">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- Headline Stack (Left/Center) -->
+            <div class="lg:col-span-7 xl:col-span-8 relative min-h-[360px] sm:min-h-[440px] flex items-center">
+              
+              <!-- Orange Scalloped Seal (Video Match) -->
+              <div class="absolute -top-10 sm:-top-16 -left-2 sm:-left-8 z-30 transition-transform duration-300 hover:rotate-0 hover:scale-110">
+                <div id="heroSealBadge" class="scalloped-badge bg-[#E4702A] text-white w-28 h-28 sm:w-36 sm:h-36 -rotate-12 shadow-paper flex flex-col items-center justify-center p-2 text-center cursor-pointer transition-all duration-300">
+                  <span id="heroSealTop" class="text-[9px] sm:text-xs font-mono font-extrabold tracking-wider">100% PURE</span>
+                  <span id="heroSealMid" class="font-serif text-sm sm:text-lg font-black leading-tight">DESI GHEE</span>
+                  <span id="heroSealBot" class="text-[8px] sm:text-[9px] tracking-widest text-white/90">SINCE 1975</span>
+                </div>
+              </div>
+
+              <!-- Title Slide 1: SINCE 1975 -->
+              <div id="heroTitleSlide1" class="relative pt-6 sm:pt-8 pl-4 sm:pl-10 transition-all duration-500 opacity-100 transform translate-y-0 w-full">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="w-6 h-[2px] bg-[#E5A72F]"></span>
+                  <span class="text-[#E5A72F] text-xs font-bold tracking-[0.2em] uppercase font-mono">HERITAGE SINCE 1975 · 01 / 03</span>
+                </div>
+                <h1 class="font-serif text-[clamp(4.2rem,11.5vw,11rem)] font-extrabold text-[#F7F1E7] tracking-tight leading-[0.85] drop-shadow-[0_4px_24px_rgba(0,0,0,0.7)]">
+                  SINCE
+                </h1>
+                <h2 class="font-serif text-[clamp(4.8rem,13vw,13rem)] font-black text-[#F7F1E7] tracking-tight leading-[0.82] pl-6 sm:pl-14 drop-shadow-[0_4px_24px_rgba(0,0,0,0.7)]">
+                  1975
+                </h2>
+                <p class="font-serif italic text-lg sm:text-2xl text-[#F7F1E7]/85 mt-4 sm:mt-6 max-w-xl pl-2">
+                  "A sweet story, still being written."
+                </p>
+                <div class="flex flex-wrap items-center gap-4 mt-6 sm:mt-8 pl-2">
+                  <a href="#online-store-section" class="px-8 py-3.5 rounded-full bg-[#F7F1E7] text-[#180306] font-serif font-bold text-sm tracking-wider uppercase hover:bg-[#E5A72F] transition-all shadow-paper active:translate-y-0.5 cursor-pointer inline-flex items-center gap-2 group">
+                    <span>SHOP SWEETS</span>
+                    <span class="group-hover:translate-x-1 transition-transform">→</span>
+                  </a>
+                  <a href="#heritage-section" class="px-7 py-3.5 rounded-full border border-[#F7F1E7]/40 text-[#F7F1E7] font-serif text-sm tracking-wider uppercase hover:bg-white/10 transition-all cursor-pointer">
+                    <span>A SWEET STORY ↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Title Slide 2: PURE DESI GHEE -->
+              <div id="heroTitleSlide2" class="absolute inset-0 pt-6 sm:pt-8 pl-4 sm:pl-10 transition-all duration-500 opacity-0 pointer-events-none transform translate-y-8 flex flex-col justify-center">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="w-6 h-[2px] bg-[#E5A72F]"></span>
+                  <span class="text-[#E5A72F] text-xs font-bold tracking-[0.2em] uppercase font-mono">AUTHENTIC MITHAI · 02 / 03</span>
+                </div>
+                <h2 class="font-serif text-[clamp(4.2rem,11.5vw,11rem)] font-extrabold text-[#F7F1E7] tracking-tight leading-[0.85] drop-shadow-[0_4px_24px_rgba(0,0,0,0.7)]">
+                  PURE
+                </h2>
+                <h2 class="font-serif text-[clamp(4.8rem,13vw,13rem)] font-black text-[#F7F1E7] tracking-tight leading-[0.82] pl-6 sm:pl-14 drop-shadow-[0_4px_24px_rgba(0,0,0,0.7)]">
+                  DESI GHEE
+                </h2>
+                <p class="font-serif italic text-lg sm:text-2xl text-[#F7F1E7]/85 mt-4 sm:mt-6 max-w-xl pl-2">
+                  Slow-roasted chana, khoya and pure golden bilona cow ghee.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 mt-6 sm:mt-8 pl-2">
+                  <a href="#online-store-section" class="px-8 py-3.5 rounded-full bg-[#F7F1E7] text-[#180306] font-serif font-bold text-sm tracking-wider uppercase hover:bg-[#E5A72F] transition-all shadow-paper active:translate-y-0.5 cursor-pointer inline-flex items-center gap-2 group">
+                    <span>ORDER SWEETS</span>
+                    <span class="group-hover:translate-x-1 transition-transform">→</span>
+                  </a>
+                  <a href="#heritage-section" class="px-7 py-3.5 rounded-full border border-[#F7F1E7]/40 text-[#F7F1E7] font-serif text-sm tracking-wider uppercase hover:bg-white/10 transition-all cursor-pointer">
+                    <span>OUR CRAFT ↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Title Slide 3: MADE FOR CELEBRATIONS -->
+              <div id="heroTitleSlide3" class="absolute inset-0 pt-6 sm:pt-8 pl-4 sm:pl-10 transition-all duration-500 opacity-0 pointer-events-none transform translate-y-8 flex flex-col justify-center">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="w-6 h-[2px] bg-[#E5A72F]"></span>
+                  <span class="text-[#E5A72F] text-xs font-bold tracking-[0.2em] uppercase font-mono">ROYAL GIFTING · 03 / 03</span>
+                </div>
+                <h2 class="font-serif text-[clamp(3.8rem,10.5vw,9.5rem)] font-extrabold text-[#F7F1E7] tracking-tight leading-[0.85] drop-shadow-[0_4px_24px_rgba(0,0,0,0.7)]">
+                  MADE FOR
+                </h2>
+                <h2 class="font-serif text-[clamp(4.2rem,11.5vw,11rem)] font-black text-[#F7F1E7] tracking-tight leading-[0.82] pl-6 sm:pl-14 drop-shadow-[0_4px_24px_rgba(0,0,0,0.7)]">
+                  CELEBRATIONS
+                </h2>
+                <p class="font-serif italic text-lg sm:text-2xl text-[#F7F1E7]/85 mt-4 sm:mt-6 max-w-xl pl-2">
+                  Regal velvet trunks and shagun boxes crafted for memorable occasions.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 mt-6 sm:mt-8 pl-2">
+                  <a href="#online-store-section" class="px-8 py-3.5 rounded-full bg-[#F7F1E7] text-[#180306] font-serif font-bold text-sm tracking-wider uppercase hover:bg-[#E5A72F] transition-all shadow-paper active:translate-y-0.5 cursor-pointer inline-flex items-center gap-2 group">
+                    <span>EXPLORE GIFTING</span>
+                    <span class="group-hover:translate-x-1 transition-transform">→</span>
+                  </a>
+                  <a href="#our-stores-section" class="px-7 py-3.5 rounded-full border border-[#F7F1E7]/40 text-[#F7F1E7] font-serif text-sm tracking-wider uppercase hover:bg-white/10 transition-all cursor-pointer">
+                    <span>WEDDING CONSULT ↗</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Product Card with Script & Looping Arrow (Right) -->
+            <div class="lg:col-span-5 xl:col-span-4 relative flex justify-center lg:justify-end mt-8 lg:mt-0">
+              <!-- Torn paper backing sheet -->
+              <div class="absolute w-[280px] sm:w-[320px] h-[340px] sm:h-[390px] bg-[#EFE4D0] -rotate-3 rounded-md shadow-paper opacity-90 pointer-events-none"></div>
+
+              <!-- Tilted Product Photo Card -->
+              <div class="relative w-[280px] sm:w-[320px] h-[340px] sm:h-[390px] bg-[#F7F1E7] p-2.5 rounded-lg border-2 border-[#180306] shadow-paper-lg rotate-4 hover:rotate-0 transition-transform duration-500 cursor-pointer z-10 group overflow-hidden">
+                <div class="relative w-full h-[82%] overflow-hidden rounded border border-[#180306]/20 bg-[#180306]">
+                  <img id="heroProductImg" src="assets/images/lyallpur_motichoor_laddu_1789498314629.jpg" alt="Pure Desi Ghee Mithai" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <div id="heroProductTag" class="absolute top-2 left-2 bg-[#E5A72F] text-[#180306] text-[10px] font-bold px-2 py-0.5 rounded shadow-sm font-sans tracking-wider">
+                    PURE GHEE
+                  </div>
+                </div>
+                <div class="pt-2 px-1 flex justify-between items-center text-[#180306]">
+                  <div>
+                    <h3 id="heroProductName" class="font-serif font-bold text-sm tracking-tight truncate max-w-[190px]">
+                      Desi Ghee Motichoor Laddu
+                    </h3>
+                    <span id="heroProductSub" class="text-[10px] text-[#180306]/70 font-sans tracking-wide">
+                      Saffron Micro-Pearls
+                    </span>
+                  </div>
+                  <span class="text-xs font-serif font-black text-[#180306]">VIEW →</span>
+                </div>
+              </div>
+
+              <!-- Handwritten Script & Curled SVG Arrow -->
+              <div class="absolute -bottom-10 -left-6 sm:-left-12 z-20 pointer-events-none">
+                <span id="heroAccentScript" class="font-script text-2xl sm:text-3xl text-[#E5A72F] -rotate-8 font-bold drop-shadow block">
+                  Pure Desi Ghee
+                </span>
+                <svg width="70" height="45" viewBox="0 0 70 45" fill="none" class="text-[#E5A72F] -mt-1 rotate-12">
+                  <path d="M10 35 C 25 38, 45 40, 55 25 C 60 18, 55 10, 42 12 C 32 15, 38 30, 58 32 L 65 30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M58 24 L 65 30 L 58 36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Lower-Left Torn Paper Sticker -->
+        <div class="absolute bottom-4 sm:bottom-6 -left-4 sm:-left-6 z-25">
+          <div class="bg-[#F7F1E7] text-[#180306] text-[10px] sm:text-xs font-serif font-black tracking-wide leading-tight px-5 py-3 -rotate-8 shadow-paper border border-[#180306]">
+            SWEET BLESSINGS FOR A BRIGHTER TOMORROW
+          </div>
+        </div>
+
+        <!-- Bottom-Center Progress Scrubber & Chapter Dots -->
+        <div class="relative z-30 flex flex-col items-center justify-center gap-2 pointer-events-auto">
+          <div id="scrollHint" class="flex items-center gap-2 mb-1 animate-bounce opacity-80 text-[10px] tracking-[0.25em] text-[#E5A72F] uppercase font-mono">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#E5A72F]"></span>
+            <span>SCROLL TO DISCOVER</span>
+          </div>
+
+          <div class="flex items-center gap-3 bg-[#180306]/70 backdrop-blur-md px-4 py-2 rounded-full border border-[#F7F1E7]/15 shadow-lg">
+            <span id="heroChapterNum" class="font-bold text-[#E5A72F] font-mono text-xs">01</span>
+            
+            <!-- 3 Scrub Segments -->
+            <div class="flex items-center gap-1.5">
+              <button onclick="jumpToHeroChapter(0)" class="h-1.5 w-10 sm:w-14 rounded-full bg-[#F7F1E7]/20 overflow-hidden cursor-pointer hover:h-2 transition-all">
+                <div id="heroSeg1" class="h-full bg-[#E5A72F] w-0 transition-all duration-75"></div>
+              </button>
+              <button onclick="jumpToHeroChapter(1)" class="h-1.5 w-10 sm:w-14 rounded-full bg-[#F7F1E7]/20 overflow-hidden cursor-pointer hover:h-2 transition-all">
+                <div id="heroSeg2" class="h-full bg-[#E5A72F] w-0 transition-all duration-75"></div>
+              </button>
+              <button onclick="jumpToHeroChapter(2)" class="h-1.5 w-10 sm:w-14 rounded-full bg-[#F7F1E7]/20 overflow-hidden cursor-pointer hover:h-2 transition-all">
+                <div id="heroSeg3" class="h-full bg-[#E5A72F] w-0 transition-all duration-75"></div>
+              </button>
+            </div>
+
+            <span class="text-xs font-mono text-[#F7F1E7]/60">03</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. SAFFRON MARQUEE BAND (VIDEO A MATCH) -->
+    <div class="relative w-full bg-[#E5A72F] border-y-2 border-[#180306] overflow-hidden py-4 sm:py-6 select-none z-20 shadow-md">
+      <div class="animate-marquee-left flex items-center">
+        <div class="flex items-center whitespace-nowrap">
+          <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-black text-[#180306] tracking-tight uppercase">CHANA BARFI</span>
+          <span class="mx-8 text-2xl text-[#180306]">✸</span>
+          <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-black text-[#180306] tracking-tight uppercase">MOTICHOOR LADDU</span>
+          <span class="mx-8 text-2xl text-[#180306]">✸</span>
+          <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-black text-[#180306] tracking-tight uppercase">DHODA BARFI</span>
+          <span class="mx-8 text-2xl text-[#180306]">✸</span>
+          <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-black text-[#180306] tracking-tight uppercase">GUR PEANUT GACHAK</span>
+          <span class="mx-8 text-2xl text-[#180306]">✸</span>
+          <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-black text-[#180306] tracking-tight uppercase">SHAHI KAJU KATLI</span>
+          <span class="mx-8 text-2xl text-[#180306]">✸</span>
+          <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-black text-[#180306] tracking-tight uppercase">ROASTED KALAKAND</span>
+          <span class="mx-8 text-2xl text-[#180306]">✸</span>
+        </div>
+        <!-- Duplicate for infinite seamless scroll -->
+        <div class="flex items-center whitespace-nowrap">
+          <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-black text-[#180306] tracking-tight uppercase">CHANA BARFI</span>
+          <span class="mx-8 text-2xl text-[#180306]">✸</span>
+          <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-black text-[#180306] tracking-tight uppercase">MOTICHOOR LADDU</span>
+          <span class="mx-8 text-2xl text-[#180306]">✸</span>
+          <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-black text-[#180306] tracking-tight uppercase">DHODA BARFI</span>
+          <span class="mx-8 text-2xl text-[#180306]">✸</span>
+          <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-black text-[#180306] tracking-tight uppercase">GUR PEANUT GACHAK</span>
+          <span class="mx-8 text-2xl text-[#180306]">✸</span>
+          <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-black text-[#180306] tracking-tight uppercase">SHAHI KAJU KATLI</span>
+          <span class="mx-8 text-2xl text-[#180306]">✸</span>
+          <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-black text-[#180306] tracking-tight uppercase">ROASTED KALAKAND</span>
+          <span class="mx-8 text-2xl text-[#180306]">✸</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. CREAM EDITORIAL STORY SPREAD (VIDEO B MATCH) -->
+    <section class="relative w-full bg-[#F7F1E7] paper-cream paisley-faint text-[#180306] py-20 sm:py-28 lg:py-36 overflow-hidden select-none">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Story Block A -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center relative">
+          <div class="lg:col-span-5 relative z-10">
+            <span class="text-xs sm:text-sm font-mono tracking-[0.25em] font-bold text-[#C98F20] uppercase block mb-3">
+              ✦ AUTHENTIC MITHAI ✦
+            </span>
+            <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-black text-[#180306] tracking-tight leading-[0.95] mb-6">
+              PURE DESI GHEE
+            </h2>
+            <p class="font-sans text-base sm:text-lg text-[#180306]/80 leading-relaxed mb-8 max-w-md">
+              Prepared in hand-tended brass kadhais over slow, patient flames. We simmer organic gram flour and whole reduced milk in 100% pure cow desi ghee, unlocking an ancestral caramelized aroma unchanged since 1975.
+            </p>
+            <a href="#online-store-section" class="px-8 py-3.5 rounded-full bg-[#180306] text-[#F7F1E7] font-serif font-bold text-sm tracking-widest uppercase hover:bg-[#E5A72F] hover:text-[#180306] transition-all shadow-paper active:translate-y-0.5 cursor-pointer inline-flex items-center gap-2">
+              <span>SHOP SWEETS</span>
+              <span>→</span>
+            </a>
+          </div>
+
+          <!-- Two Side-by-Side Photos with Overlapping Seal -->
+          <div class="lg:col-span-7 relative">
+            <div class="absolute top-1/2 -left-6 sm:-left-10 -translate-y-1/2 z-30 pointer-events-auto">
+              <div class="scalloped-badge bg-[#E4702A] text-white w-28 h-28 sm:w-32 sm:h-32 rotate-8 shadow-paper flex flex-col items-center justify-center p-2 text-center">
+                <span class="text-[10px] font-mono font-bold tracking-wider">100% PURE</span>
+                <span class="font-serif text-sm sm:text-base font-black">DESI GHEE</span>
+                <span class="text-[8px] font-sans tracking-widest text-white/90">HANDMADE</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 sm:gap-4 items-center">
+              <div class="relative aspect-[3/4] rounded-lg overflow-hidden border-2 border-[#180306] shadow-paper group">
+                <img src="assets/images/lyallpur_desi_ghee_1789498186551.jpg" alt="Pure Desi Ghee Pouring" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div class="absolute bottom-2 left-2 bg-[#F7F1E7]/90 text-[#180306] text-[10px] font-bold px-2 py-0.5 rounded border border-[#180306]/20 font-mono">
+                  BRASS KADHAI
+                </div>
+              </div>
+              <div class="relative aspect-[4/5] rounded-lg overflow-hidden border-2 border-[#180306] shadow-paper group sm:mt-6">
+                <img src="assets/images/lyallpur_dhoda_barfi_1789498301424.jpg" alt="Chana Barfi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div class="absolute bottom-2 left-2 bg-[#E5A72F] text-[#180306] text-[10px] font-bold px-2 py-0.5 rounded shadow font-mono">
+                  CHANA BARFI
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story Block B: Celebrations -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center relative mt-20 sm:mt-28 lg:mt-32 pt-8 sm:pt-14 border-t border-[#180306]/10">
+          <div class="lg:col-span-5 relative z-10">
+            <span class="text-xs sm:text-sm font-mono tracking-[0.25em] font-bold text-[#E4702A] uppercase block mb-3">
+              ✦ HERITAGE GIFTING ✦
+            </span>
+            <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-black text-[#180306] tracking-tight leading-[0.95] mb-6">
+              MADE FOR CELEBRATIONS
+            </h2>
+            <p class="font-sans text-base sm:text-lg text-[#180306]/80 leading-relaxed mb-8 max-w-md">
+              From auspicious shagun rituals to lavish wedding trousseaus and corporate milestones. Our gold-embossed crimson caskets carry the dignity of five decades, delivering sweet blessings that families cherish for generations.
+            </p>
+            <div class="flex flex-wrap items-center gap-4">
+              <a href="#online-store-section" class="px-8 py-3.5 rounded-full bg-[#180306] text-[#F7F1E7] font-serif font-bold text-sm tracking-widest uppercase hover:bg-[#E5A72F] hover:text-[#180306] transition-all shadow-paper active:translate-y-0.5 cursor-pointer inline-flex items-center gap-2">
+                <span>SHOP BOXES</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 relative">
+            <div class="relative aspect-[16/11] rounded-lg overflow-hidden border-2 border-[#180306] shadow-paper-lg group">
+              <img src="assets/images/lyallpur_gifting_box_1789498201866.jpg" alt="Royal Heritage Gifting Box" class="w-full h-full object-cover group-hover:scale-104 transition-transform duration-700" />
+              <div class="absolute top-4 right-4 z-20 ticket-edge bg-[#E5A72F] text-[#180306] px-3 py-1.5 rounded text-[10px] font-mono tracking-widest font-bold -rotate-6 shadow">
+                SHAGUN COLLECTION
+              </div>
+              <div class="absolute bottom-4 left-4 bg-[#180306]/90 text-[#F7F1E7] px-3.5 py-1.5 rounded-full border border-[#E5A72F]/30 text-xs font-serif flex items-center gap-2">
+                <span>The Imperial Crimson & Gold Trousseau</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. MAROON BADGE BAND WITH 5 PHYSICAL BADGES (VIDEO B MATCH) -->
+    <section class="relative w-full bg-[#180306] paper-maroon text-[#F7F1E7] pt-20 pb-12 overflow-hidden select-none border-t-2 border-[#180306]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-16">
+        <div class="text-center mb-12 sm:mb-16">
+          <span class="text-[11px] sm:text-xs font-mono tracking-[0.3em] font-bold text-[#E5A72F] uppercase">
+            ✦ AUTHENTIC HERITAGE SEALS ✦
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-black text-[#F7F1E7] tracking-tight mt-2">
+            Purity Without Compromise
+          </h2>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-10 lg:gap-14">
+          <!-- Badge 1: Cream Scallop -->
+          <div class="scalloped-badge bg-[#F7F1E7] text-[#180306] w-36 h-36 sm:w-44 sm:h-44 -rotate-6 shadow-paper flex flex-col items-center justify-center p-3 text-center cursor-pointer hover:rotate-0 transition-transform">
+            <span class="text-[9px] font-mono tracking-widest text-[#180306]/70">CERTIFIED</span>
+            <span class="font-serif text-base sm:text-xl font-black text-[#180306] leading-tight my-0.5">100% PURE</span>
+            <span class="text-xs sm:text-sm font-serif font-extrabold text-[#C98F20]">DESI GHEE</span>
+            <span class="text-[8px] font-mono tracking-widest text-[#180306]/70 mt-1">LUDHIANA</span>
+          </div>
+
+          <!-- Badge 2: Starburst Orange -->
+          <div class="starburst-badge bg-[#E4702A] text-white w-40 h-40 sm:w-48 sm:h-48 rotate-3 shadow-paper flex flex-col items-center justify-center p-3 text-center cursor-pointer hover:rotate-0 transition-transform">
+            <span class="text-[9px] font-mono tracking-widest text-white/90">WORLDWIDE EXPRESS</span>
+            <span class="font-serif text-base sm:text-xl font-black text-white leading-tight my-0.5">PUNJAB TO</span>
+            <span class="font-serif text-base sm:text-xl font-black text-[#E5A72F]">THE WORLD</span>
+            <span class="text-[8px] font-mono tracking-wider text-white/80 mt-1">EXPORTS READY</span>
+          </div>
+
+          <!-- Badge 3: Saffron Oval -->
+          <div class="rounded-[2.5rem] bg-[#E5A72F] text-[#180306] px-8 py-4 rotate-6 shadow-paper border-2 border-[#180306] flex flex-col items-center cursor-pointer hover:rotate-0 transition-transform">
+            <span class="text-[10px] font-mono font-bold tracking-widest text-[#180306]">ANCESTRAL LEGACY</span>
+            <span class="font-serif text-xl sm:text-2xl font-black text-[#180306] tracking-tight">SINCE 1975</span>
+            <span class="text-[9px] font-sans tracking-wider text-[#180306]/80">FIVE DECADES OF DEVOTION</span>
+          </div>
+
+          <!-- Badge 4: Cream Ticket -->
+          <div class="ticket-edge bg-[#F7F1E7] text-[#180306] p-4 rounded -rotate-3 shadow-paper w-40 sm:w-48 text-center cursor-pointer hover:rotate-0 transition-transform">
+            <span class="text-[9px] font-mono font-bold text-[#E4702A] tracking-wider mb-0.5 block">FESTIVE & WEDDINGS</span>
+            <span class="font-serif text-sm sm:text-base font-black text-[#180306] leading-tight block">MADE FOR CELEBRATIONS</span>
+            <span class="text-[9px] font-mono tracking-widest text-[#180306]/70 mt-1 block">SHAGUN SPECIAL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cream Reverse Ticker -->
+      <div class="relative w-full bg-[#F7F1E7] border-y-2 border-[#180306] overflow-hidden py-3 sm:py-4 select-none shadow-inner">
+        <div class="animate-marquee-right flex items-center">
+          <div class="flex items-center whitespace-nowrap">
+            <span class="font-serif text-lg sm:text-2xl font-black text-[#180306] tracking-tight uppercase px-6">MOTICHOOR LADDU</span>
+            <span class="text-[#E4702A] text-lg font-bold">✦</span>
+            <span class="font-serif text-lg sm:text-2xl font-black text-[#180306] tracking-tight uppercase px-6">CHANA BARFI</span>
+            <span class="text-[#E4702A] text-lg font-bold">✦</span>
+            <span class="font-serif text-lg sm:text-2xl font-black text-[#180306] tracking-tight uppercase px-6">DHODA BARFI</span>
+            <span class="text-[#E4702A] text-lg font-bold">✦</span>
+            <span class="font-serif text-lg sm:text-2xl font-black text-[#180306] tracking-tight uppercase px-6">GUR PEANUT GACHAK</span>
+            <span class="text-[#E4702A] text-lg font-bold">✦</span>
+            <span class="font-serif text-lg sm:text-2xl font-black text-[#180306] tracking-tight uppercase px-6">PUNJABI MATHI</span>
+            <span class="text-[#E4702A] text-lg font-bold">✦</span>
+          </div>
+          <div class="flex items-center whitespace-nowrap">
+            <span class="font-serif text-lg sm:text-2xl font-black text-[#180306] tracking-tight uppercase px-6">MOTICHOOR LADDU</span>
+            <span class="text-[#E4702A] text-lg font-bold">✦</span>
+            <span class="font-serif text-lg sm:text-2xl font-black text-[#180306] tracking-tight uppercase px-6">CHANA BARFI</span>
+            <span class="text-[#E4702A] text-lg font-bold">✦</span>
+            <span class="font-serif text-lg sm:text-2xl font-black text-[#180306] tracking-tight uppercase px-6">DHODA BARFI</span>
+            <span class="text-[#E4702A] text-lg font-bold">✦</span>
+            <span class="font-serif text-lg sm:text-2xl font-black text-[#180306] tracking-tight uppercase px-6">GUR PEANUT GACHAK</span>
+            <span class="text-[#E4702A] text-lg font-bold">✦</span>
+            <span class="font-serif text-lg sm:text-2xl font-black text-[#180306] tracking-tight uppercase px-6">PUNJABI MATHI</span>
+            <span class="text-[#E4702A] text-lg font-bold">✦</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. HERITAGE ARCHIVAL COLLAGE (1974 -> 1975) -->
+    <section id="heritage-section" class="relative w-full bg-[#180306] paper-maroon text-[#F7F1E7] py-24 sm:py-32 overflow-hidden select-none">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="mb-14 sm:mb-20">
+          <span class="text-xs sm:text-sm font-mono tracking-[0.3em] font-bold text-[#E5A72F] uppercase block mb-2">
+            ✦ ARCHIVAL HERITAGE CHRONICLE ✦
+          </span>
+          <h2 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-black text-[#F7F1E7] tracking-tight">
+            A Sweet Story, Still Being Written.
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <!-- Left Giant Year Roll -->
+          <div class="lg:col-span-5 relative">
+            <div class="font-serif text-7xl sm:text-9xl font-black tracking-tight text-[#E5A72F] leading-none">
+              1975
+            </div>
+            <span class="text-xs font-mono tracking-[0.2em] text-[#F7F1E7]/60 uppercase block mt-2">
+              FOUNDED BY SURINDER KHARBANDA · LUDHIANA
+            </span>
+
+            <div class="relative pl-6 border-l-2 border-[#E5A72F]/30 space-y-6 my-8 text-xs font-mono">
+              <div class="relative">
+                <div class="absolute -left-[31px] top-1 w-3.5 h-3.5 rounded-full bg-[#180306] border-2 border-[#F7F1E7]/50"></div>
+                <span class="text-[#F7F1E7]/70 block font-bold">1920s · Lyallpur Walian Di Hatti</span>
+                <span class="text-[#F7F1E7] font-serif font-bold text-sm">Ancestral Roots in Lyallpur</span>
+              </div>
+              <div class="relative">
+                <div class="absolute -left-[31px] top-1 w-3.5 h-3.5 rounded-full bg-[#E5A72F] border-2 border-[#180306] shadow-[0_0_10px_#E5A72F]"></div>
+                <span class="text-[#E5A72F] block font-bold">1975 · Ludhiana Inception</span>
+                <span class="text-[#F7F1E7] font-serif font-bold text-sm">Gokul Road & Iconic Petha</span>
+              </div>
+              <div class="relative">
+                <div class="absolute -left-[31px] top-1 w-3.5 h-3.5 rounded-full bg-[#180306] border-2 border-[#F7F1E7]/50"></div>
+                <span class="text-[#F7F1E7]/70 block font-bold">1990s · Model Town Flagship</span>
+                <span class="text-[#F7F1E7] font-serif font-bold text-sm">Winter Gachak & Namkeen Legacy</span>
+              </div>
+              <div class="relative">
+                <div class="absolute -left-[31px] top-1 w-3.5 h-3.5 rounded-full bg-[#180306] border-2 border-[#F7F1E7]/50"></div>
+                <span class="text-[#F7F1E7]/70 block font-bold">Today · Global Export</span>
+                <span class="text-[#F7F1E7] font-serif font-bold text-sm">Purity Across UK, USA & Canada</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Paper Card -->
+          <div class="lg:col-span-7 relative bg-[#F7F1E7] paper-cream text-[#180306] p-6 sm:p-10 rounded-xl border-2 border-[#180306] shadow-paper-lg">
+            <span class="text-xs font-mono font-bold tracking-[0.25em] text-[#E4702A] uppercase block mb-1">
+              SURINDER KHARBANDA & THE ICONIC PETHA
+            </span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-black text-[#180306] tracking-tight mb-4">
+              The Beginning in Ludhiana (1975)
+            </h3>
+            <div class="relative aspect-[16/10] rounded-lg overflow-hidden border-2 border-[#180306] shadow-paper my-4 bg-[#180306]">
+              <img src="assets/images/lyallpur_store_facade_1789498231205.jpg" alt="Model Town Flagship Store" class="w-full h-full object-cover" />
+            </div>
+            <p class="font-sans text-sm sm:text-base text-[#180306]/85 leading-relaxed">
+              Carrying forward his family's ancestral legacy after partition, Sh. Surinder Kharbanda formally founded Lyallpur Sweets in Ludhiana in 1975. The brand ignited an enduring culinary sensation starting with its legendary, melt-in-mouth Petha preparations and pure cow desi ghee barfis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ONLINE STORE SHOWCASE IN FLOATING DEVICE FRAME (VIDEO MATCH) -->
+    <section class="relative w-full bg-[#B9764F] py-24 sm:py-32 overflow-hidden select-none">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="text-center mb-10 sm:mb-14">
+          <span class="text-xs sm:text-sm font-mono tracking-[0.3em] font-bold text-[#F7F1E7] uppercase block mb-2">
+            ✦ ELEVATED COMMERCE SPECIMEN ✦
+          </span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-black text-[#180306] tracking-tight">
+            Order From Our Traditional Counters
+          </h2>
+        </div>
+
+        <!-- The Device / Browser Frame -->
+        <div class="relative bg-[#180306] p-3 sm:p-4 rounded-[32px] shadow-2xl border-4 border-[#2A080E]">
+          <div class="absolute top-2 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-white/20"></div>
+          
+          <div class="bg-[#F7F1E7] paper-cream rounded-[24px] overflow-hidden text-[#180306] p-4 sm:p-6">
+            <div class="flex justify-between items-center pb-4 border-b border-[#180306]/15 mb-6">
+              <span class="font-serif text-xl sm:text-2xl font-black">Online Store</span>
+              <span class="text-xs font-mono font-bold text-[#E4702A]">SHOWING SIGNATURE MITHAI</span>
+            </div>
+
+            <!-- 3 Sample Showcase Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <!-- Item 1 -->
+              <div class="bg-white rounded-xl border border-[#180306]/20 p-3 shadow-paper-sm">
+                <div class="aspect-[4/3] rounded-lg overflow-hidden mb-2 bg-[#180306]">
+                  <img src="assets/images/lyallpur_dhoda_barfi_1789498301424.jpg" alt="Chana Barfi" class="w-full h-full object-cover" />
+                </div>
+                <div class="flex justify-between items-baseline mb-1">
+                  <h4 class="font-serif font-bold text-sm">Chana Barfi</h4>
+                  <span class="font-serif font-black text-sm">₹360</span>
+                </div>
+                <p class="text-[10px] text-[#180306]/60 mb-2">Slow-simmered in brass kadhais</p>
+                <button onclick="addToCartDirect('chana-barfi', 'Chana Barfi', '400g', 360)" class="w-full py-2 rounded bg-[#180306] text-[#F7F1E7] font-serif text-xs font-bold uppercase hover:bg-[#E5A72F] hover:text-[#180306] transition-colors">
+                  Add to Cart +
+                </button>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="bg-white rounded-xl border border-[#180306]/20 p-3 shadow-paper-sm">
+                <div class="aspect-[4/3] rounded-lg overflow-hidden mb-2 bg-[#180306]">
+                  <img src="assets/images/lyallpur_motichoor_laddu_1789498314629.jpg" alt="Motichoor Laddu" class="w-full h-full object-cover" />
+                </div>
+                <div class="flex justify-between items-baseline mb-1">
+                  <h4 class="font-serif font-bold text-sm">Motichoor Laddu</h4>
+                  <span class="font-serif font-black text-sm">₹340</span>
+                </div>
+                <p class="text-[10px] text-[#180306]/60 mb-2">Micro-pearls with Kashmiri saffron</p>
+                <button onclick="addToCartDirect('desi-ghee-motichoor-laddu', 'Desi Ghee Motichoor Laddu', '500g', 340)" class="w-full py-2 rounded bg-[#180306] text-[#F7F1E7] font-serif text-xs font-bold uppercase hover:bg-[#E5A72F] hover:text-[#180306] transition-colors">
+                  Add to Cart +
+                </button>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="bg-white rounded-xl border border-[#180306]/20 p-3 shadow-paper-sm">
+                <div class="aspect-[4/3] rounded-lg overflow-hidden mb-2 bg-[#180306]">
+                  <img src="assets/images/lyallpur_gifting_box_1789498201866.jpg" alt="Heritage Box" class="w-full h-full object-cover" />
+                </div>
+                <div class="flex justify-between items-baseline mb-1">
+                  <h4 class="font-serif font-bold text-sm">Royal Heritage Box</h4>
+                  <span class="font-serif font-black text-sm">₹1,450</span>
+                </div>
+                <p class="text-[10px] text-[#180306]/60 mb-2">Grand crimson foil trousseau casket</p>
+                <button onclick="addToCartDirect('royal-heritage-box', 'The Lyallpur Royal Heritage Gifting Box', '1.2kg Grand Casket', 1450)" class="w-full py-2 rounded bg-[#180306] text-[#F7F1E7] font-serif text-xs font-bold uppercase hover:bg-[#E5A72F] hover:text-[#180306] transition-colors">
+                  Add to Cart +
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-10">
+          <a href="#online-store-section" class="px-10 py-4 rounded-full bg-[#180306] text-[#F7F1E7] font-serif font-black text-sm sm:text-base tracking-widest uppercase hover:bg-[#E5A72F] hover:text-[#180306] transition-all shadow-paper-lg cursor-pointer inline-flex items-center gap-2">
+            <span>EXPLORE FULL ONLINE STORE</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FULL ONLINE STORE SECTION -->
+    <section id="online-store-section" class="relative w-full bg-[#F7F1E7] paper-cream paisley-faint text-[#180306] py-20 select-none border-t-2 border-[#180306]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-[#180306]/15">
+          <div>
+            <span class="text-[11px] font-mono tracking-[0.25em] font-bold text-[#E4702A] uppercase block mb-1">
+              ✦ DISPATCHED DAILY FROM LUDHIANA ✦
+            </span>
+            <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-black text-[#180306] tracking-tight">
+              Online Store
+            </h2>
+          </div>
+
+          <!-- Search Input -->
+          <div class="relative w-full md:w-96 flex items-center">
+            <input
+              id="storeSearchInput"
+              type="text"
+              onkeyup="filterProducts()"
+              placeholder="Search Chana Barfi, Laddus, Gachak..."
+              class="w-full pl-4 pr-12 py-3 rounded-full bg-white/90 border-1.5 border-[#180306]/30 text-sm font-sans placeholder-[#180306]/40 focus:outline-none focus:border-[#180306] shadow-sm"
+            />
+            <div class="absolute right-2 w-8 h-8 rounded-full bg-[#180306] text-[#F7F1E7] flex items-center justify-center pointer-events-none">
+              <i data-lucide="search" class="w-3.5 h-3.5"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Pills -->
+        <div class="py-6 flex items-center gap-2 overflow-x-auto">
+          <button onclick="setStoreCategory('all', this)" class="category-btn active px-4 py-2 rounded-full text-xs font-serif font-bold uppercase tracking-wider bg-[#180306] text-[#F7F1E7] border border-[#180306] shadow-paper-sm">
+            ALL SWEETS
+          </button>
+          <button onclick="setStoreCategory('sweets', this)" class="category-btn px-4 py-2 rounded-full text-xs font-serif font-bold uppercase tracking-wider bg-[#EFE4D0] text-[#180306] border border-[#180306]/20 hover:bg-[#E3D3B8]">
+            MITHAI
+          </button>
+          <button onclick="setStoreCategory('namkeen', this)" class="category-btn px-4 py-2 rounded-full text-xs font-serif font-bold uppercase tracking-wider bg-[#EFE4D0] text-[#180306] border border-[#180306]/20 hover:bg-[#E3D3B8]">
+            SAVOURY
+          </button>
+          <button onclick="setStoreCategory('gachak', this)" class="category-btn px-4 py-2 rounded-full text-xs font-serif font-bold uppercase tracking-wider bg-[#EFE4D0] text-[#180306] border border-[#180306]/20 hover:bg-[#E3D3B8]">
+            GACHAK & REWRI
+          </button>
+          <button onclick="setStoreCategory('gifting', this)" class="category-btn px-4 py-2 rounded-full text-xs font-serif font-bold uppercase tracking-wider bg-[#EFE4D0] text-[#180306] border border-[#180306]/20 hover:bg-[#E3D3B8]">
+            ROYAL GIFT BOXES
+          </button>
+        </div>
+
+        <!-- 4-Column Product Grid -->
+        <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+          <!-- Populated dynamically via JS below -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. GALLERY HIGHLIGHTS COLLAGE (VIDEO A MATCH) -->
+    <section id="gallery-section" class="relative w-full bg-[#180306] paper-maroon text-[#F7F1E7] py-24 select-none overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+          <div class="ticket-edge bg-[#E5A72F] text-[#180306] px-4 py-1.5 rounded-full text-xs font-serif font-bold inline-block mb-3">
+            LOOK CLOSELY
+          </div>
+          <h2 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-black text-[#F7F1E7] tracking-tight">
+            THE SWEET SIDE OF THINGS
+          </h2>
+          <p class="font-serif italic text-base sm:text-xl text-[#F7F1E7]/75 mt-2">
+            "Some things deserve to be seen before they are tasted."
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-[#F7F1E7] p-2.5 rounded-xl border-2 border-[#E5A72F]/30 shadow-paper -rotate-2 hover:rotate-0 transition-transform">
+            <div class="aspect-[4/3] rounded-lg overflow-hidden bg-[#180306] relative">
+              <img src="assets/images/lyallpur_desi_ghee_1789498186551.jpg" alt="Brass Kadhais" class="w-full h-full object-cover" />
+              <span class="absolute top-2 left-2 bg-[#180306]/90 text-[#E5A72F] text-[10px] font-mono px-2 py-0.5 rounded">TAG 01</span>
+            </div>
+            <div class="p-2 text-[#180306] flex justify-between items-center text-xs font-serif font-bold">
+              <span>Brass Kadhai Simmering</span>
+              <span class="text-[#E4702A]">CRAFT</span>
+            </div>
+          </div>
+
+          <div class="bg-[#F7F1E7] p-2.5 rounded-xl border-2 border-[#E5A72F]/30 shadow-paper rotate-2 hover:rotate-0 transition-transform">
+            <div class="aspect-[4/3] rounded-lg overflow-hidden bg-[#180306] relative">
+              <img src="assets/images/lyallpur_motichoor_laddu_1789498314629.jpg" alt="Motichoor Laddu" class="w-full h-full object-cover" />
+              <span class="absolute top-2 left-2 bg-[#180306]/90 text-[#E5A72F] text-[10px] font-mono px-2 py-0.5 rounded">TAG 02</span>
+            </div>
+            <div class="p-2 text-[#180306] flex justify-between items-center text-xs font-serif font-bold">
+              <span>Micro-Pearl Droplets</span>
+              <span class="text-[#E4702A]">ROYAL</span>
+            </div>
+          </div>
+
+          <div class="bg-[#F7F1E7] p-2.5 rounded-xl border-2 border-[#E5A72F]/30 shadow-paper -rotate-1 hover:rotate-0 transition-transform">
+            <div class="aspect-[4/3] rounded-lg overflow-hidden bg-[#180306] relative">
+              <img src="assets/images/lyallpur_gifting_box_1789498201866.jpg" alt="Wedding Trousseau" class="w-full h-full object-cover" />
+              <span class="absolute top-2 left-2 bg-[#180306]/90 text-[#E5A72F] text-[10px] font-mono px-2 py-0.5 rounded">TAG 03</span>
+            </div>
+            <div class="p-2 text-[#180306] flex justify-between items-center text-xs font-serif font-bold">
+              <span>Imperial Crimson Box</span>
+              <span class="text-[#E4702A]">GIFTING</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. OUR STORES & STORE SELECTOR -->
+    <section id="our-stores-section" class="relative w-full bg-[#F7F1E7] paper-cream paisley-faint text-[#180306] py-20 select-none">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="text-xs sm:text-sm font-mono tracking-[0.3em] font-bold text-[#E4702A] uppercase block mb-2">
+            ✦ LUDHIANA SHOWROOMS ✦
+          </span>
+          <h2 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-black text-[#180306] tracking-tight">
+            COME MEET US IRL.
+          </h2>
+          <p class="font-serif italic text-base sm:text-xl text-[#180306]/75 mt-2">
+            "The sweets taste better when you know where the story lives."
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Store 1 -->
+          <div class="bg-white p-5 rounded-2xl border-2 border-[#180306] shadow-paper flex flex-col justify-between">
+            <div>
+              <span class="bg-[#180306] text-[#E5A72F] text-[9px] font-mono px-2 py-0.5 rounded-full font-bold uppercase inline-block mb-2">
+                FLAGSHIP
+              </span>
+              <h3 class="font-serif font-bold text-lg text-[#180306] mb-1">Model Town</h3>
+              <p class="text-xs font-sans text-[#180306]/75 leading-relaxed mb-3">
+                519-R, Model Town Market, near Mint Ghumeri Chowk, Ludhiana - 141002
+              </p>
+              <p class="text-xs font-mono font-bold text-[#E4702A]">+91 161 240 2200</p>
+              <p class="text-[11px] font-mono text-[#180306]/60">8:00 AM – 10:00 PM Daily</p>
+            </div>
+            <a href="https://maps.google.com/?q=Lyallpur+Sweets+Model+Town+Ludhiana" target="_blank" class="mt-4 inline-block text-xs font-serif font-bold text-[#180306] underline">
+              GET DIRECTIONS ↗
+            </a>
+          </div>
+
+          <!-- Store 2 -->
+          <div class="bg-white p-5 rounded-2xl border-2 border-[#180306] shadow-paper flex flex-col justify-between">
+            <div>
+              <span class="bg-[#EFE4D0] text-[#180306] text-[9px] font-mono px-2 py-0.5 rounded-full font-bold uppercase inline-block mb-2">
+                BOUTIQUE
+              </span>
+              <h3 class="font-serif font-bold text-lg text-[#180306] mb-1">Deep Nagar</h3>
+              <p class="text-xs font-sans text-[#180306]/75 leading-relaxed mb-3">
+                SCF 14, Main Commercial Complex, Deep Nagar, Ludhiana - 141001
+              </p>
+              <p class="text-xs font-mono font-bold text-[#E4702A]">+91 161 244 5566</p>
+              <p class="text-[11px] font-mono text-[#180306]/60">8:30 AM – 9:30 PM Daily</p>
+            </div>
+            <a href="https://maps.google.com/?q=Lyallpur+Sweets+Deep+Nagar+Ludhiana" target="_blank" class="mt-4 inline-block text-xs font-serif font-bold text-[#180306] underline">
+              GET DIRECTIONS ↗
+            </a>
+          </div>
+
+          <!-- Store 3 -->
+          <div class="bg-white p-5 rounded-2xl border-2 border-[#180306] shadow-paper flex flex-col justify-between">
+            <div>
+              <span class="bg-[#EFE4D0] text-[#180306] text-[9px] font-mono px-2 py-0.5 rounded-full font-bold uppercase inline-block mb-2">
+                EXPERIENCE CENTRE
+              </span>
+              <h3 class="font-serif font-bold text-lg text-[#180306] mb-1">South City</h3>
+              <p class="text-xs font-sans text-[#180306]/75 leading-relaxed mb-3">
+                Galleria Arcade, South City Road, Ayali Kalan, Ludhiana - 141027
+              </p>
+              <p class="text-xs font-mono font-bold text-[#E4702A]">+91 161 245 8899</p>
+              <p class="text-[11px] font-mono text-[#180306]/60">9:00 AM – 10:30 PM Daily</p>
+            </div>
+            <a href="https://maps.google.com/?q=Lyallpur+Sweets+South+City+Ludhiana" target="_blank" class="mt-4 inline-block text-xs font-serif font-bold text-[#180306] underline">
+              GET DIRECTIONS ↗
+            </a>
+          </div>
+
+          <!-- Store 4 -->
+          <div class="bg-white p-5 rounded-2xl border-2 border-[#180306] shadow-paper flex flex-col justify-between">
+            <div>
+              <span class="bg-[#EFE4D0] text-[#180306] text-[9px] font-mono px-2 py-0.5 rounded-full font-bold uppercase inline-block mb-2">
+                SHOWROOM
+              </span>
+              <h3 class="font-serif font-bold text-lg text-[#180306] mb-1">Ghumar Mandi</h3>
+              <p class="text-xs font-sans text-[#180306]/75 leading-relaxed mb-3">
+                Aarti Chowk, Main Market, Ghumar Mandi, Ludhiana - 141001
+              </p>
+              <p class="text-xs font-mono font-bold text-[#E4702A]">+91 161 242 7711</p>
+              <p class="text-[11px] font-mono text-[#180306]/60">8:30 AM – 10:00 PM Daily</p>
+            </div>
+            <a href="https://maps.google.com/?q=Lyallpur+Sweets+Ghumar+Mandi+Ludhiana" target="_blank" class="mt-4 inline-block text-xs font-serif font-bold text-[#180306] underline">
+              GET DIRECTIONS ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= UNIVERSAL EDITORIAL FOOTER ================= -->
+  <footer class="relative w-full bg-[#180306] paper-maroon paisley-maroon-dark text-[#F7F1E7] pt-20 sm:pt-28 pb-12 overflow-hidden border-t-4 border-[#E5A72F]/40 select-none">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <!-- Grand Statement -->
+      <div class="relative pb-16 border-b border-[#F7F1E7]/15">
+        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+          <div class="relative max-w-4xl">
+            <h2 class="font-serif text-5xl sm:text-7xl lg:text-8xl font-black text-[#F7F1E7] tracking-tight leading-[0.88]">
+              PURE. DESI. TIMELESS.
+            </h2>
+            <svg width="340" height="35" viewBox="0 0 340 35" fill="none" class="text-[#E5A72F] -mt-2 ml-4">
+              <path d="M5 25 C 60 5, 140 38, 220 15 C 270 2, 310 28, 335 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <div class="scalloped-badge bg-[#F7F1E7] text-[#180306] w-36 h-36 sm:w-44 sm:h-44 rotate-8 shadow-paper flex flex-col items-center justify-center p-3 text-center">
+            <span class="text-[10px] font-mono tracking-widest text-[#180306]/70 font-bold">GUARANTEED</span>
+            <span class="font-serif text-lg sm:text-2xl font-black text-[#180306] leading-tight my-0.5">100% PURE</span>
+            <span class="text-xs sm:text-sm font-serif font-extrabold text-[#C98F20]">DESI GHEE</span>
+            <span class="text-[9px] font-mono tracking-widest text-[#180306]/60 mt-1">EST. 1975</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 py-16 text-xs">
+        <div class="lg:col-span-4 space-y-4">
+          <span class="font-serif text-2xl font-bold tracking-tight text-[#F7F1E7] block">The Lyallpur Store</span>
+          <span class="text-[10px] tracking-[0.3em] font-mono uppercase text-[#E5A72F] font-bold block">SINCE 1975 · LUDHIANA</span>
+          <p class="font-sans text-[#F7F1E7]/75 leading-relaxed">
+            Five decades of slow-simmered brass kadhais, uncompromising cow desi ghee, and pure authentic taste across generations.
+          </p>
+          <p class="font-mono text-[#E5A72F] font-bold">+91 161 240 2200 / +91 98140 00000</p>
+        </div>
+
+        <div class="lg:col-span-3 space-y-3 font-serif font-bold">
+          <span class="font-mono tracking-widest text-[#E5A72F] uppercase block mb-2">EXPLORE</span>
+          <p><a href="#hero-section" class="hover:text-[#E5A72F]">Home Heritage Showcase</a></p>
+          <p><a href="#online-store-section" class="hover:text-[#E5A72F]">Online Sweet Shop</a></p>
+          <p><a href="#gallery-section" class="hover:text-[#E5A72F]">Media & Craft Gallery</a></p>
+          <p><a href="#our-stores-section" class="hover:text-[#E5A72F]">Our 4 Showrooms</a></p>
+        </div>
+
+        <div class="lg:col-span-3 space-y-2 font-sans text-[#F7F1E7]/80">
+          <span class="font-mono tracking-widest text-[#E5A72F] font-bold uppercase block mb-2">SHOWROOMS</span>
+          <p><strong>Model Town:</strong> 519-R, Market, Ludhiana</p>
+          <p><strong>Deep Nagar:</strong> SCF 14, Commercial Complex</p>
+          <p><strong>South City:</strong> Galleria Arcade, Ayali Kalan</p>
+          <p><strong>Ghumar Mandi:</strong> Aarti Chowk, Main Market</p>
+        </div>
+
+        <div class="lg:col-span-2 space-y-3">
+          <span class="font-mono tracking-widest text-[#E5A72F] font-bold uppercase block mb-1">NEWSLETTER</span>
+          <p class="text-[#F7F1E7]/70">Receive festive announcements and sweet updates.</p>
+          <div class="flex">
+            <input type="email" placeholder="Email address" class="w-full px-3 py-2 bg-white/10 border border-[#F7F1E7]/30 text-xs rounded-l-lg text-white" />
+            <button class="px-3 bg-[#E5A72F] text-[#180306] rounded-r-lg font-bold">→</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-[#F7F1E7]/15 flex justify-between text-xs font-mono text-[#F7F1E7]/60">
+        <div>© 2026 The Lyallpur Store. FSSAI Lic. No. 12117801000234.</div>
+        <div>All sweets prepared in 100% pure desi ghee.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING SUPPORT CHAT BUTTON ================= -->
+  <a href="https://wa.me/919814000000?text=Namaste%20Lyallpur%20Sweets,%20I%20would%20like%20to%20enquire%20about%20ordering%20sweets." target="_blank" class="fixed bottom-6 right-6 z-40 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#180306] text-[#E5A72F] border-2 border-[#E5A72F] shadow-paper flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
+    <i data-lucide="message-circle" class="w-6 h-6"></i>
+    <span class="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E5A72F] opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-[#E4702A] border border-[#180306]"></span>
+    </span>
+  </a>
+
+  <!-- ================= CART DRAWER (SLIDE-OUT FROM RIGHT) ================= -->
+  <div id="cartDrawerBackdrop" onclick="toggleCart()" class="fixed inset-0 bg-[#180306]/75 backdrop-blur-xs z-50 hidden opacity-0 transition-opacity duration-300"></div>
+  
+  <div id="cartDrawer" class="fixed top-0 right-0 bottom-0 w-full max-w-[480px] bg-[#F7F1E7] paper-cream text-[#180306] shadow-2xl z-50 transform translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col justify-between border-l-2 border-[#180306]">
+    <div class="p-5 sm:p-6 border-b border-[#180306]/15 flex items-center justify-between bg-[#EFE4D0]/60">
+      <div>
+        <h2 class="font-serif text-xl sm:text-2xl font-black text-[#180306]">Your Sweet Box</h2>
+        <span id="cartDrawerSubtitle" class="text-[10px] font-mono uppercase tracking-wider text-[#180306]/60">0 Confections Selected</span>
+      </div>
+      <button onclick="toggleCart()" class="w-8 h-8 rounded-full bg-[#180306] text-[#F7F1E7] flex items-center justify-center hover:bg-[#E5A72F] hover:text-[#180306] transition-colors">
+        ✕
+      </button>
+    </div>
+
+    <!-- Items list -->
+    <div id="cartItemsList" class="flex-1 overflow-y-auto p-5 sm:p-6 divide-y divide-[#180306]/10">
+      <!-- Rendered dynamically -->
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="p-5 sm:p-6 border-t-2 border-[#180306] bg-[#EFE4D0]/60 space-y-4">
+      <div class="flex justify-between font-serif font-black text-lg">
+        <span>Grand Total:</span>
+        <span id="cartDrawerTotal">₹0</span>
+      </div>
+      <div class="space-y-2">
+        <button onclick="openCheckout()" class="w-full py-3.5 rounded-full bg-[#180306] text-[#F7F1E7] font-serif font-bold text-sm tracking-widest uppercase hover:bg-[#E5A72F] hover:text-[#180306] transition-all shadow-paper">
+          CHECKOUT →
+        </button>
+        <button onclick="orderViaWhatsApp()" class="w-full py-3 rounded-full bg-[#1FA855] text-white font-serif font-bold text-xs uppercase tracking-wider hover:bg-[#188c45] transition-all">
+          ORDER ON WHATSAPP
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CART REASSURANCE MODAL ================= -->
+  <div id="reassuranceModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 select-none hidden">
+    <div onclick="closeReassurance()" class="fixed inset-0 bg-[#180306]/75 backdrop-blur-xs"></div>
+    <div class="relative w-full max-w-md bg-[#F7F1E7] paper-cream rounded-3xl border-2 border-[#180306] shadow-paper-lg p-8 text-center z-10 text-[#180306]">
+      <button onclick="closeReassurance()" class="absolute top-4 right-4 p-2 text-[#180306]/60 hover:text-[#180306]">✕</button>
+      <div class="w-20 h-20 rounded-2xl bg-[#180306] text-[#E5A72F] flex items-center justify-center shadow-paper mx-auto mb-4 border-2 border-[#E5A72F]">
+        <span class="font-serif text-3xl font-black">1975</span>
+      </div>
+      <h3 class="font-serif text-2xl font-black text-[#180306] mb-2 leading-tight">
+        Sweet Blessings for a Brighter Tomorrow
+      </h3>
+      <p class="font-sans text-xs text-[#180306]/80 mb-6 leading-relaxed">
+        Your delicacy has been added to your Sweet Box. Handcrafted with 100% pure desi ghee and packaged fresh in Ludhiana.
+      </p>
+      <button onclick="closeReassurance(); toggleCart();" class="w-full py-3.5 rounded-full bg-[#180306] text-[#F7F1E7] font-serif font-bold text-xs uppercase tracking-wider shadow-paper hover:bg-[#E5A72F] hover:text-[#180306]">
+        VIEW SWEET BOX & CHECKOUT →
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <script>
+    // Product Catalogue Data
+    const PRODUCTS = [
+      {
+        id: 'chana-barfi',
+        name: 'Chana Barfi',
+        punjabi: 'ਚਨਾ ਬਰਫ਼ੀ',
+        category: 'sweets',
+        price: 360,
+        weight: '400g',
+        image: 'assets/images/lyallpur_dhoda_barfi_1789498301424.jpg',
+        badge: 'Bestseller',
+        ghee: true,
+      },
+      {
+        id: 'desi-ghee-motichoor-laddu',
+        name: 'Desi Ghee Motichoor Laddu',
+        punjabi: 'ਮੋਤੀਚੂਰ ਲੱਡੂ',
+        category: 'sweets',
+        price: 340,
+        weight: '500g',
+        image: 'assets/images/lyallpur_motichoor_laddu_1789498314629.jpg',
+        badge: 'Most Loved',
+        ghee: true,
+      },
+      {
+        id: 'dhoda-barfi',
+        name: 'Dhoda Barfi',
+        punjabi: 'ਢੋਡਾ ਬਰਫ਼ੀ',
+        category: 'sweets',
+        price: 390,
+        weight: '500g',
+        image: 'assets/images/lyallpur_dhoda_barfi_1789498301424.jpg',
+        badge: 'Heritage',
+        ghee: true,
+      },
+      {
+        id: 'desi-ghee-atta-panjiri',
+        name: 'Desi Ghee Atta Panjiri',
+        punjabi: 'ਆਟਾ ਪੰਜੀਰੀ',
+        category: 'sweets',
+        price: 450,
+        weight: '500g',
+        image: 'assets/images/lyallpur_desi_ghee_1789498186551.jpg',
+        badge: 'Nutritional',
+        ghee: true,
+      },
+      {
+        id: 'roasted-kalakand',
+        name: 'Roasted Kalakand',
+        punjabi: 'ਰੋਸਟੇਡ ਕਲਾਕੰਦ',
+        category: 'sweets',
+        price: 370,
+        weight: '500g',
+        image: 'assets/images/lyallpur_hero_sweets_1789498173011.jpg',
+        badge: 'Artisanal',
+        ghee: true,
+      },
+      {
+        id: 'kaju-barfi',
+        name: 'Shahi Kaju Barfi',
+        punjabi: 'ਕਾਜੂ ਬਰਫ਼ੀ',
+        category: 'sweets',
+        price: 490,
+        weight: '400g',
+        image: 'assets/images/lyallpur_hero_sweets_1789498173011.jpg',
+        badge: 'Premium Gift',
+        ghee: false,
+      },
+      {
+        id: 'gur-gachak',
+        name: 'Heritage Gur Peanut Gachak',
+        punjabi: 'ਗੁੜ ਮੂੰਗਫਲੀ ਗੱਚਕ',
+        category: 'gachak',
+        price: 210,
+        weight: '400g',
+        image: 'assets/images/lyallpur_punjabi_gachak_1789498330845.jpg',
+        badge: 'Winter Special',
+        ghee: true,
+      },
+      {
+        id: 'punjabi-mathi',
+        name: 'Punjabi Spiced Mathi',
+        punjabi: 'ਪੰਜਾਬੀ ਮੱਠੀ',
+        category: 'namkeen',
+        price: 180,
+        weight: '400g',
+        image: 'assets/images/lyallpur_punjabi_mathi_1789498344505.jpg',
+        badge: 'Tea-time',
+        ghee: true,
+      },
+      {
+        id: 'royal-heritage-box',
+        name: 'The Lyallpur Royal Heritage Gifting Box',
+        punjabi: 'ਰਾਇਲ ਹੈਰੀਟੇਜ ਗਿਫ਼ਟ ਬਾਕਸ',
+        category: 'gifting',
+        price: 1450,
+        weight: '1.2kg Grand Casket',
+        image: 'assets/images/lyallpur_gifting_box_1789498201866.jpg',
+        badge: 'Luxury Casket',
+        ghee: true,
+      }
+    ];
+
+    let cart = [];
+    let hasSeenReassurance = false;
+    let selectedCat = 'all';
+
+    // Initialize Page
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      renderProducts();
+      initCurtainLoader();
+      initScrollProgress();
+    });
+
+    // Curtain Loading Animation
+    function initCurtainLoader() {
+      let p = 0;
+      const progressEl = document.getElementById('curtainProgress');
+      const textEl = document.getElementById('progressText');
+      const wordsEl = document.getElementById('cyclingWord');
+      const words = ['MITHAI', 'PURE DESI GHEE', 'ROYAL GIFTING', 'PUNJAB', 'EST. 1975'];
+      let wIdx = 0;
+
+      const wordTimer = setInterval(() => {
+        wIdx = (wIdx + 1) % words.length;
+        wordsEl.innerText = `✦ ${words[wIdx]} ✦`;
+      }, 400);
+
+      const timer = setInterval(() => {
+        p += 3;
+        if (p >= 100) {
+          p = 100;
+          clearInterval(timer);
+          clearInterval(wordTimer);
+          setTimeout(openCurtains, 200);
+        }
+        progressEl.style.width = p + '%';
+        textEl.innerText = p + '%';
+      }, 35);
+    }
+
+    function openCurtains() {
+      const left = document.getElementById('leftCurtain');
+      const right = document.getElementById('rightCurtain');
+      const content = document.getElementById('curtainContent');
+      const curtains = document.getElementById('openingCurtains');
+
+      content.style.opacity = '0';
+      left.style.transform = 'translateX(-100%)';
+      right.style.transform = 'translateX(100%)';
+
+      setTimeout(() => {
+        curtains.style.display = 'none';
+      }, 1100);
+    }
+
+    function skipIntro() {
+      const curtains = document.getElementById('openingCurtains');
+      curtains.style.opacity = '0';
+      setTimeout(() => {
+        curtains.style.display = 'none';
+      }, 400);
+    }
+
+    // Scroll Progress & Navbar Scrolled State
+    function initScrollProgress() {
+      window.addEventListener('scroll', () => {
+        const h = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolled = (window.scrollY / h) * 100;
+        document.getElementById('scrollProgress').style.width = scrolled + '%';
+
+        const nav = document.getElementById('mainNavbar');
+        if (window.scrollY > 40) {
+          nav.classList.add('bg-[#180306]/95', 'backdrop-blur-md', 'border-b', 'border-[#F7F1E7]/15', 'shadow-lg');
+          nav.classList.remove('bg-transparent');
+        } else {
+          nav.classList.remove('bg-[#180306]/95', 'backdrop-blur-md', 'border-b', 'border-[#F7F1E7]/15', 'shadow-lg');
+          nav.classList.add('bg-transparent');
+        }
+      });
+    }
+
+    // Product Grid Rendering
+    function renderProducts() {
+      const grid = document.getElementById('productsGrid');
+      const search = (document.getElementById('storeSearchInput')?.value || '').toLowerCase();
+
+      const filtered = PRODUCTS.filter(p => {
+        if (selectedCat !== 'all' && p.category !== selectedCat) return false;
+        if (search && !p.name.toLowerCase().includes(search) && !p.punjabi.toLowerCase().includes(search)) return false;
+        return true;
+      });
+
+      grid.innerHTML = filtered.map(p => `
+        <div class="bg-white rounded-xl border border-[#180306]/20 p-3.5 shadow-paper-sm flex flex-col justify-between group hover:-translate-y-1 transition-transform">
+          <div class="relative aspect-[4/5] rounded-lg overflow-hidden bg-[#180306] mb-3">
+            <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute top-2.5 left-2.5 bg-[#E5A72F] text-[#180306] text-[9px] font-mono font-bold px-2 py-0.5 rounded shadow">
+              ${p.badge}
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between items-baseline mb-1">
+              <h4 class="font-serif font-black text-base text-[#180306] truncate">${p.name}</h4>
+              <span class="font-serif font-black text-sm text-[#180306]">₹${p.price}</span>
+            </div>
+            <span class="text-xs text-[#180306]/60 font-sans block mb-2">${p.punjabi}</span>
+            <span class="text-[10px] font-mono text-[#180306]/60 uppercase block mb-3">Pack: ${p.weight}</span>
+          </div>
+          <button onclick="addToCartDirect('${p.id}', '${p.name}', '${p.weight}', ${p.price})" class="w-full py-2.5 rounded-lg bg-[#180306] text-[#F7F1E7] font-serif font-bold text-xs uppercase tracking-wider hover:bg-[#E5A72F] hover:text-[#180306] transition-colors shadow flex items-center justify-center gap-1.5 cursor-pointer">
+            <span>ADD TO CART</span>
+            <span>+</span>
+          </button>
+        </div>
+      `).join('');
+
+      lucide.createIcons();
+    }
+
+    function setStoreCategory(cat, btn) {
+      selectedCat = cat;
+      document.querySelectorAll('.category-btn').forEach(b => {
+        b.classList.remove('bg-[#180306]', 'text-[#F7F1E7]', 'active');
+        b.classList.add('bg-[#EFE4D0]', 'text-[#180306]');
+      });
+      btn.classList.add('bg-[#180306]', 'text-[#F7F1E7]', 'active');
+      btn.classList.remove('bg-[#EFE4D0]', 'text-[#180306]');
+      renderProducts();
+    }
+
+    function filterProducts() {
+      renderProducts();
+    }
+
+    // Cart Management
+    function addToCartDirect(id, name, weight, price) {
+      const existing = cart.find(item => item.id === id && item.weight === weight);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        const prod = PRODUCTS.find(p => p.id === id);
+        cart.push({
+          id,
+          name,
+          weight,
+          price,
+          qty: 1,
+          image: prod ? prod.image : 'assets/images/lyallpur_dhoda_barfi_1789498301424.jpg'
+        });
+      }
+
+      updateCartUI();
+
+      if (!hasSeenReassurance) {
+        hasSeenReassurance = true;
+        document.getElementById('reassuranceModal').classList.remove('hidden');
+      } else {
+        openCart();
+      }
+    }
+
+    function updateCartUI() {
+      const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
+      const subtotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+
+      document.getElementById('navCartBadge').innerText = totalCount;
+      document.getElementById('cartDrawerSubtitle').innerText = `${totalCount} Confection${totalCount === 1 ? '' : 's'} Selected`;
+      document.getElementById('cartDrawerTotal').innerText = `₹${subtotal}`;
+
+      const list = document.getElementById('cartItemsList');
+      if (cart.length === 0) {
+        list.innerHTML = `
+          <div class="text-center py-16 text-[#180306]/70">
+            <span class="text-4xl block mb-2">🪔</span>
+            <p class="font-serif font-bold text-base">Your sweet box is empty</p>
+          </div>
+        `;
+      } else {
+        list.innerHTML = cart.map((item, idx) => `
+          <div class="py-3 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-2.5">
+              <img src="${item.image}" alt="${item.name}" class="w-12 h-12 rounded object-cover border border-[#180306]/20" />
+              <div>
+                <h5 class="font-serif font-bold text-xs truncate max-w-[170px]">${item.name}</h5>
+                <span class="text-[10px] font-mono text-[#E4702A]">${item.weight} · ₹${item.price}</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="flex items-center border border-[#180306]/30 rounded text-xs">
+                <button onclick="changeQty(${idx}, -1)" class="px-2 py-0.5 hover:bg-black/5 font-bold">−</button>
+                <span class="px-2 font-mono font-bold">${item.qty}</span>
+                <button onclick="changeQty(${idx}, 1)" class="px-2 py-0.5 hover:bg-black/5 font-bold">+</button>
+              </div>
+              <span class="font-serif font-black text-xs w-12 text-right">₹${item.price * item.qty}</span>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
+    function changeQty(idx, delta) {
+      cart[idx].qty += delta;
+      if (cart[idx].qty <= 0) {
+        cart.splice(idx, 1);
+      }
+      updateCartUI();
+    }
+
+    function toggleCart() {
+      const drawer = document.getElementById('cartDrawer');
+      const backdrop = document.getElementById('cartDrawerBackdrop');
+      if (drawer.classList.contains('translate-x-full')) {
+        openCart();
+      } else {
+        closeCart();
+      }
+    }
+
+    function openCart() {
+      const drawer = document.getElementById('cartDrawer');
+      const backdrop = document.getElementById('cartDrawerBackdrop');
+      backdrop.classList.remove('hidden');
+      setTimeout(() => backdrop.classList.remove('opacity-0'), 10);
+      drawer.classList.remove('translate-x-full');
+    }
+
+    function closeCart() {
+      const drawer = document.getElementById('cartDrawer');
+      const backdrop = document.getElementById('cartDrawerBackdrop');
+      drawer.classList.add('translate-x-full');
+      backdrop.classList.add('opacity-0');
+      setTimeout(() => backdrop.classList.add('hidden'), 300);
+    }
+
+    function closeReassurance() {
+      document.getElementById('reassuranceModal').classList.add('hidden');
+    }
+
+    function orderViaWhatsApp() {
+      if (cart.length === 0) return;
+      const subtotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+      const itemsList = cart.map(i => `• ${i.name} (${i.weight}) x ${i.qty} = ₹${i.price * i.qty}`).join('%0A');
+      const msg = `*NEW ORDER - THE LYALLPUR STORE*%0A%0A${itemsList}%0A%0A*Total Amount:* ₹${subtotal}%0APlease share delivery details and dispatch confirmation. Thank you!`;
+      window.open(`https://wa.me/919814000000?text=${msg}`, '_blank');
+    }
+
+    function openCheckout() {
+      orderViaWhatsApp();
+    }
+
+    // ================= HERO SCROLL CANVAS SEQUENCE =================
+    let jumpToHeroChapter = function(idx) {};
+
+    (function initHeroCanvas() {
+      const track = document.getElementById('hero-track');
+      const canvas = document.getElementById('heroFrameCanvas');
+      if (!track || !canvas) return;
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return;
+
+      const totalFrames = 240;
+      const frames = new Array(totalFrames).fill(null);
+      let targetProgress = 0;
+      let currentProgress = 0;
+      const lerp = 0.12;
+
+      // DOM Elements for dynamic sync
+      const slide1 = document.getElementById('heroTitleSlide1');
+      const slide2 = document.getElementById('heroTitleSlide2');
+      const slide3 = document.getElementById('heroTitleSlide3');
+      const sealTop = document.getElementById('heroSealTop');
+      const sealMid = document.getElementById('heroSealMid');
+      const sealBot = document.getElementById('heroSealBot');
+      const chapterNum = document.getElementById('heroChapterNum');
+      const seg1 = document.getElementById('heroSeg1');
+      const seg2 = document.getElementById('heroSeg2');
+      const seg3 = document.getElementById('heroSeg3');
+      const handoffVeil = document.getElementById('heroHandoffVeil');
+      const scrollHint = document.getElementById('scrollHint');
+
+      function resizeCanvas() {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = canvas.parentElement.offsetWidth * dpr;
+        canvas.height = canvas.parentElement.offsetHeight * dpr;
+      }
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      // Jump to chapter helper
+      jumpToHeroChapter = function(idx) {
+        const maxScroll = track.offsetHeight - window.innerHeight;
+        const targetP = idx === 0 ? 0.05 : idx === 1 ? 0.40 : 0.75;
+        const targetScroll = track.offsetTop + targetP * maxScroll;
+        window.scrollTo({ top: targetScroll, behavior: 'smooth' });
+      };
+
+      // Progressive frame loading
+      function loadFrame(idx) {
+        if (frames[idx]) return Promise.resolve(frames[idx]);
+        const pad = String(idx + 1).padStart(3, '0');
+        const url = `hero-frames/frame_${pad}.webp`;
+        return new Promise((resolve) => {
+          const img = new Image();
+          img.src = url;
+          img.onload = () => {
+            frames[idx] = img;
+            resolve(img);
+          };
+          img.onerror = () => resolve(null);
+        });
+      }
+
+      // Initial poster frame
+      loadFrame(0).then(img => {
+        if (img) drawCover(img);
+      });
+
+      // Background progressive preloading passes
+      async function preloadAll() {
+        for (let i = 0; i < totalFrames; i += 15) {
+          await loadFrame(i);
+        }
+        for (let i = 0; i < totalFrames; i += 5) {
+          await loadFrame(i);
+        }
+        for (let i = 0; i < totalFrames; i++) {
+          if (!frames[i]) await loadFrame(i);
+        }
+      }
+      preloadAll();
+
+      function getNearest(idx) {
+        if (frames[idx]) return frames[idx];
+        for (let offset = 1; offset < totalFrames; offset++) {
+          if (idx - offset >= 0 && frames[idx - offset]) return frames[idx - offset];
+          if (idx + offset < totalFrames && frames[idx + offset]) return frames[idx + offset];
+        }
+        return null;
+      }
+
+      function drawCover(img) {
+        if (!img || !canvas.width || !canvas.height) return;
+        const imgAspect = (img.width || 1920) / (img.height || 1080);
+        const canvasAspect = canvas.width / canvas.height;
+        let w, h, x, y;
+        if (canvasAspect > imgAspect) {
+          w = canvas.width;
+          h = canvas.width / imgAspect;
+          x = 0;
+          y = (canvas.height - h) * 0.5;
+        } else {
+          h = canvas.height;
+          w = canvas.height * imgAspect;
+          x = (canvas.width - w) * 0.5;
+          y = 0;
+        }
+        ctx.drawImage(img, x, y, w, h);
+      }
+
+      function onScroll() {
+        const maxScroll = track.offsetHeight - window.innerHeight;
+        if (maxScroll <= 0) return;
+        const scrollDist = -track.getBoundingClientRect().top;
+        targetProgress = Math.max(0, Math.min(1, scrollDist / maxScroll));
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      function render() {
+        currentProgress += (targetProgress - currentProgress) * lerp;
+        const p = Math.max(0, Math.min(1, currentProgress));
+
+        // 1. Draw canvas frame
+        const frameIdx = Math.floor(p * (totalFrames - 1));
+        const img = getNearest(frameIdx);
+        if (img) drawCover(img);
+
+        // 2. Hide scroll hint once user started scrolling
+        if (scrollHint) {
+          scrollHint.style.opacity = p > 0.04 ? '0' : '0.8';
+        }
+
+        // 3. Sync Titles & Seals across progress ranges
+        if (p < 0.33) {
+          // Chapter 1: SINCE 1975
+          if (slide1) { slide1.style.opacity = '1'; slide1.style.transform = 'translateY(0)'; slide1.style.pointerEvents = 'auto'; }
+          if (slide2) { slide2.style.opacity = '0'; slide2.style.transform = 'translateY(24px)'; slide2.style.pointerEvents = 'none'; }
+          if (slide3) { slide3.style.opacity = '0'; slide3.style.transform = 'translateY(24px)'; slide3.style.pointerEvents = 'none'; }
+          if (sealTop) sealTop.textContent = '100% PURE';
+          if (sealMid) sealMid.textContent = 'DESI GHEE';
+          if (sealBot) sealBot.textContent = 'SINCE 1975';
+          if (chapterNum) chapterNum.textContent = '01';
+
+          if (seg1) seg1.style.width = `${Math.min(100, (p / 0.33) * 100)}%`;
+          if (seg2) seg2.style.width = '0%';
+          if (seg3) seg3.style.width = '0%';
+        } else if (p < 0.66) {
+          // Chapter 2: PURE DESI GHEE
+          if (slide1) { slide1.style.opacity = '0'; slide1.style.transform = 'translateY(-24px)'; slide1.style.pointerEvents = 'none'; }
+          if (slide2) { slide2.style.opacity = '1'; slide2.style.transform = 'translateY(0)'; slide2.style.pointerEvents = 'auto'; }
+          if (slide3) { slide3.style.opacity = '0'; slide3.style.transform = 'translateY(24px)'; slide3.style.pointerEvents = 'none'; }
+          if (sealTop) sealTop.textContent = '100% PURE';
+          if (sealMid) sealMid.textContent = 'COW GHEE';
+          if (sealBot) sealBot.textContent = 'BILONA CHURNED';
+          if (chapterNum) chapterNum.textContent = '02';
+
+          if (seg1) seg1.style.width = '100%';
+          if (seg2) seg2.style.width = `${Math.min(100, ((p - 0.33) / 0.33) * 100)}%`;
+          if (seg3) seg3.style.width = '0%';
+        } else if (p < 0.94) {
+          // Chapter 3: MADE FOR CELEBRATIONS
+          if (slide1) { slide1.style.opacity = '0'; slide1.style.pointerEvents = 'none'; }
+          if (slide2) { slide2.style.opacity = '0'; slide2.style.transform = 'translateY(-24px)'; slide2.style.pointerEvents = 'none'; }
+          if (slide3) { slide3.style.opacity = '1'; slide3.style.transform = 'translateY(0)'; slide3.style.pointerEvents = 'auto'; }
+          if (sealTop) sealTop.textContent = 'EMBOSSED FOIL';
+          if (sealMid) sealMid.textContent = 'SHAGUN READY';
+          if (sealBot) sealBot.textContent = 'ROYAL GIFT';
+          if (chapterNum) chapterNum.textContent = '03';
+
+          if (seg1) seg1.style.width = '100%';
+          if (seg2) seg2.style.width = '100%';
+          if (seg3) seg3.style.width = `${Math.min(100, ((p - 0.66) / 0.28) * 100)}%`;
+        } else {
+          // Handoff to Marquee (p >= 0.94)
+          if (slide3) { slide3.style.opacity = '0'; slide3.style.transform = 'translateY(-24px)'; }
+          if (seg1) seg1.style.width = '100%';
+          if (seg2) seg2.style.width = '100%';
+          if (seg3) seg3.style.width = '100%';
+        }
+
+        // Handoff veil opacity fade
+        if (handoffVeil) {
+          if (p >= 0.93) {
+            handoffVeil.style.opacity = String((p - 0.93) / 0.07);
+          } else {
+            handoffVeil.style.opacity = '0';
+          }
+        }
+
+        requestAnimationFrame(render);
+      }
+      render();
+    })();
+  </script>
+</body>
+</html>

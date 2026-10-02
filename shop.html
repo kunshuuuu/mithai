@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Sweet Shop | The Lyallpur Store · Handcrafted Pure Desi Ghee Mithai</title>
+  <meta name="description" content="Order handcrafted pure desi ghee sweets, Chana Barfi, Motichoor Laddu, Winter Gachak, and royal gift hampers dispatched fresh daily from Ludhiana." />
+  <meta name="theme-color" content="#180306" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            maroon: { 900: '#180306', 800: '#27060B', 700: '#3A0F14' },
+            cream: { 100: '#F7F1E7', 200: '#EFE4D0', 300: '#E3D3B8' },
+            saffron: { 500: '#E5A72F', 600: '#C98F20' },
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+            script: ['"Caveat"', 'cursive', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      background-color: #F7F1E7;
+      color: #180306;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: clip;
+      -webkit-font-smoothing: antialiased;
+    }
+    .paper-cream {
+      background-color: #F7F1E7;
+      background-image: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(239, 228, 208, 0.4) 100%),
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+    }
+    .paper-maroon {
+      background-color: #180306;
+      background-image: radial-gradient(ellipse at 50% 20%, rgba(75, 22, 28, 0.45) 0%, rgba(24, 3, 6, 0.95) 75%);
+    }
+    .shadow-paper { box-shadow: 4px 4px 0 rgba(24, 3, 6, 0.85); }
+    .shadow-paper-sm { box-shadow: 2px 2px 0 rgba(24, 3, 6, 0.85); }
+    .ticket-edge { border: 1.5px dashed #180306; }
+    .scalloped-badge {
+      clip-path: polygon(
+        50% 0%, 57% 5%, 65% 1%, 71% 8%, 79% 6%, 84% 14%, 92% 14%, 95% 23%, 
+        100% 26%, 100% 35%, 100% 41%, 97% 50%, 100% 59%, 100% 65%, 100% 74%, 
+        95% 77%, 92% 86%, 84% 86%, 79% 94%, 71% 92%, 65% 99%, 57% 95%, 
+        50% 100%, 43% 95%, 35% 99%, 29% 92%, 21% 94%, 16% 86%, 8% 86%, 
+        5% 77%, 0% 74%, 0% 65%, 0% 59%, 3% 50%, 0% 41%, 0% 35%, 0% 26%, 
+        5% 23%, 8% 14%, 16% 14%, 21% 6%, 29% 8%, 35% 1%, 43% 5%
+      );
+    }
+  </style>
+</head>
+<body class="paper-cream selection:bg-[#E5A72F] selection:text-[#180306]">
+
+  <!-- Top 3px Scroll Progress -->
+  <div id="scrollProgress" class="fixed top-0 left-0 h-[3px] bg-[#E5A72F] z-50 transition-all duration-75 shadow-[0_0_8px_#E5A72F] pointer-events-none" style="width: 0%;"></div>
+
+  <!-- Announcement Bar -->
+  <div class="relative bg-[#180306] border-b border-[#F7F1E7]/10 text-[#F7F1E7] h-[30px] flex items-center justify-center px-4 text-[11px] tracking-wide select-none z-40 overflow-hidden">
+    <div class="flex items-center gap-2 font-medium opacity-90 truncate">
+      <i data-lucide="sparkles" class="w-3 h-3 text-[#E5A72F] shrink-0"></i>
+      <span class="truncate">Dispatched Daily from Ludhiana · 100% Pure Cow Desi Ghee · Worldwide Express Delivery</span>
+    </div>
+  </div>
+
+  <!-- Sticky Editorial Header -->
+  <header class="sticky top-0 left-0 right-0 z-40 bg-[#180306]/95 backdrop-blur-md border-b border-[#F7F1E7]/15 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="index.html" class="flex flex-col group select-none">
+        <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-[#F7F1E7] group-hover:text-[#E5A72F] transition-colors leading-tight">
+          The Lyallpur Store
+        </span>
+        <span class="text-[9px] tracking-[0.3em] font-sans uppercase text-[#E5A72F] font-semibold">
+          SINCE 1975 · LUDHIANA
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center space-x-7 select-none">
+        <a href="index.html" class="text-xs tracking-[0.14em] font-medium text-[#F7F1E7]/80 hover:text-[#E5A72F] transition-colors">HOME</a>
+        <a href="shop.html" class="text-xs tracking-[0.14em] font-bold text-[#E5A72F] border-b-2 border-[#E5A72F] pb-1">ONLINE STORE</a>
+        <a href="gallery.html" class="text-xs tracking-[0.14em] font-medium text-[#F7F1E7]/80 hover:text-[#E5A72F] transition-colors">GALLERY</a>
+        <a href="stores.html" class="text-xs tracking-[0.14em] font-medium text-[#F7F1E7]/80 hover:text-[#E5A72F] transition-colors">OUR STORES</a>
+        <a href="careers.html" class="text-xs tracking-[0.14em] font-medium text-[#F7F1E7]/80 hover:text-[#E5A72F] transition-colors">CAREERS</a>
+      </nav>
+
+      <div class="flex items-center space-x-3">
+        <button onclick="toggleCart()" aria-label="Cart" class="relative p-2 text-[#F7F1E7] hover:text-[#E5A72F] transition-colors rounded-full hover:bg-white/5 cursor-pointer">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          <span id="navCartBadge" class="absolute top-0.5 right-0.5 w-4 h-4 rounded-full bg-[#E5A72F] text-[#180306] font-sans text-[10px] font-bold flex items-center justify-center shadow-sm">
+            0
+          </span>
+        </button>
+        <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-[#F7F1E7] hover:text-[#E5A72F]">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#180306] border-t border-[#F7F1E7]/10 px-6 py-4 space-y-3">
+      <a href="index.html" class="block text-sm font-serif text-[#F7F1E7]/80 hover:text-[#E5A72F]">HOME</a>
+      <a href="shop.html" class="block text-sm font-serif font-bold text-[#E5A72F]">ONLINE STORE</a>
+      <a href="gallery.html" class="block text-sm font-serif text-[#F7F1E7]/80 hover:text-[#E5A72F]">GALLERY</a>
+      <a href="stores.html" class="block text-sm font-serif text-[#F7F1E7]/80 hover:text-[#E5A72F]">OUR STORES</a>
+      <a href="careers.html" class="block text-sm font-serif text-[#F7F1E7]/80 hover:text-[#E5A72F]">CAREERS</a>
+    </div>
+  </header>
+
+  <!-- STORE HERO BANNER -->
+  <section class="relative bg-[#180306] paper-maroon text-[#F7F1E7] py-16 sm:py-20 select-none border-b-4 border-[#E5A72F]/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#E5A72F]/40 bg-[#180306] text-[#E5A72F] text-xs font-mono tracking-widest font-bold mb-4">
+        ✦ HANDMADE DAILY IN BRASS KADHAIS ✦
+      </div>
+      <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-[#F7F1E7]">
+        The Online Sweet Shop
+      </h1>
+      <p class="font-serif italic text-base sm:text-xl text-[#F7F1E7]/80 mt-3 max-w-2xl mx-auto">
+        "Pure cow desi ghee confections, seasonal jaggery brittle, roasted namkeen, and royal trousseau hampers dispatched fresh each morning."
+      </p>
+
+      <!-- Trust Badges Strip -->
+      <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-8 mt-8 text-xs font-mono text-[#E5A72F]">
+        <span>✓ 100% Pure Cow Desi Ghee</span>
+        <span>✓ Zero Artificial Preservatives</span>
+        <span>✓ Airtight Freshness Nitrogen Packaging</span>
+        <span>✓ Worldwide Courier Delivery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORE CATALOG SECTION -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Controls Bar -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-[#180306]/15">
+      <!-- Search -->
+      <div class="relative w-full md:w-96">
+        <input
+          id="searchInput"
+          type="text"
+          oninput="renderProducts()"
+          placeholder="Search Chana Barfi, Motichoor Laddu, Mathi..."
+          class="w-full pl-4 pr-10 py-3 rounded-full bg-white border border-[#180306]/20 text-sm font-sans placeholder-[#180306]/40 focus:outline-none focus:border-[#180306] shadow-sm"
+        />
+        <i data-lucide="search" class="w-4 h-4 text-[#180306]/50 absolute right-4 top-1/2 -translate-y-1/2"></i>
+      </div>
+
+      <!-- Categories Pills -->
+      <div class="flex items-center gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0" id="categoryContainer">
+        <button onclick="setCategory('all')" class="cat-pill active px-4 py-2 rounded-full text-xs font-serif font-bold uppercase tracking-wider bg-[#180306] text-[#F7F1E7] border border-[#180306] shadow-paper-sm transition-all whitespace-nowrap">
+          ALL PRODUCTS
+        </button>
+        <button onclick="setCategory('sweets')" class="cat-pill px-4 py-2 rounded-full text-xs font-serif font-bold uppercase tracking-wider bg-[#EFE4D0] text-[#180306] border border-[#180306]/20 hover:bg-[#E3D3B8] transition-all whitespace-nowrap">
+          DESI GHEE MITHAI
+        </button>
+        <button onclick="setCategory('namkeen')" class="cat-pill px-4 py-2 rounded-full text-xs font-serif font-bold uppercase tracking-wider bg-[#EFE4D0] text-[#180306] border border-[#180306]/20 hover:bg-[#E3D3B8] transition-all whitespace-nowrap">
+          SAVOURIES & MATHI
+        </button>
+        <button onclick="setCategory('gachak')" class="cat-pill px-4 py-2 rounded-full text-xs font-serif font-bold uppercase tracking-wider bg-[#EFE4D0] text-[#180306] border border-[#180306]/20 hover:bg-[#E3D3B8] transition-all whitespace-nowrap">
+          WINTER GACHAK
+        </button>
+        <button onclick="setCategory('gifting')" class="cat-pill px-4 py-2 rounded-full text-xs font-serif font-bold uppercase tracking-wider bg-[#EFE4D0] text-[#180306] border border-[#180306]/20 hover:bg-[#E3D3B8] transition-all whitespace-nowrap">
+          ROYAL GIFT HAMPERS
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pt-10">
+      <!-- Generated via JS -->
+    </div>
+  </main>
+
+  <!-- Quick View Modal -->
+  <div id="quickViewBackdrop" onclick="closeQuickView()" class="fixed inset-0 bg-[#180306]/80 backdrop-blur-xs z-50 hidden opacity-0 transition-opacity duration-300"></div>
+  <div id="quickViewModal" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl bg-[#F7F1E7] paper-cream rounded-2xl border-2 border-[#180306] shadow-2xl z-50 hidden p-6 sm:p-8">
+    <div id="modalBody"></div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <div id="cartBackdrop" onclick="toggleCart()" class="fixed inset-0 bg-[#180306]/80 backdrop-blur-xs z-50 hidden opacity-0 transition-opacity duration-300"></div>
+  <aside id="cartDrawer" class="fixed top-0 right-0 bottom-0 w-full max-w-md bg-[#F7F1E7] paper-cream text-[#180306] z-50 transform translate-x-full transition-transform duration-300 shadow-2xl flex flex-col justify-between">
+    <div class="p-6 border-b border-[#180306]/15 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <i data-lucide="shopping-bag" class="w-5 h-5 text-[#E4702A]"></i>
+        <h3 class="font-serif font-black text-xl">Your Sweet Box (<span id="cartDrawerCount">0</span>)</h3>
+      </div>
+      <button onclick="toggleCart()" class="p-2 hover:bg-black/10 rounded-full cursor-pointer">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <div id="cartItemsList" class="p-6 overflow-y-auto flex-1 space-y-4"></div>
+
+    <div class="p-6 border-t border-[#180306]/15 bg-white/50 space-y-4">
+      <div class="flex justify-between items-center text-sm font-serif">
+        <span class="text-[#180306]/70">Subtotal:</span>
+        <span id="cartSubtotal" class="font-black text-lg text-[#180306]">₹0</span>
+      </div>
+      <button onclick="checkoutWhatsApp()" class="w-full py-3.5 rounded-full bg-[#180306] text-[#F7F1E7] font-serif font-black text-sm uppercase tracking-wider hover:bg-[#E5A72F] hover:text-[#180306] transition-colors shadow-paper flex items-center justify-center gap-2 cursor-pointer">
+        <span>PROCEED TO WHATSAPP ORDER</span>
+        <span>→</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Universal Footer -->
+  <footer class="relative w-full bg-[#180306] paper-maroon text-[#F7F1E7] pt-16 pb-10 border-t-4 border-[#E5A72F]/40 select-none mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-[#F7F1E7]/15 text-xs">
+        <div>
+          <span class="font-serif text-xl font-bold text-[#F7F1E7] block">The Lyallpur Store</span>
+          <span class="font-mono text-[#E5A72F] text-[10px] uppercase tracking-widest block mb-2">LUDHIANA SINCE 1975</span>
+          <p class="text-[#F7F1E7]/70 leading-relaxed">
+            Pure desi ghee sweets, fresh khoya, seasonal winter gachak, and bespoke wedding gifting caskets.
+          </p>
+        </div>
+        <div class="font-serif font-bold space-y-2">
+          <span class="font-mono text-[#E5A72F] uppercase block mb-2">NAVIGATION</span>
+          <p><a href="index.html" class="hover:text-[#E5A72F]">Home Heritage Showcase</a></p>
+          <p><a href="shop.html" class="text-[#E5A72F]">Online Sweet Shop</a></p>
+          <p><a href="gallery.html" class="hover:text-[#E5A72F]">Media & Craft Gallery</a></p>
+          <p><a href="stores.html" class="hover:text-[#E5A72F]">Our 4 Ludhiana Showrooms</a></p>
+          <p><a href="careers.html" class="hover:text-[#E5A72F]">Join The Karigar Brigade</a></p>
+        </div>
+        <div class="space-y-1.5">
+          <span class="font-mono text-[#E5A72F] uppercase font-bold block mb-2">FLAGSHIP STORE</span>
+          <p>519-R, Model Town Market, Ludhiana</p>
+          <p class="font-mono text-[#E5A72F]">+91 161 240 2200</p>
+          <p class="text-[#F7F1E7]/60">Daily: 8:00 AM – 10:00 PM</p>
+        </div>
+        <div>
+          <span class="font-mono text-[#E5A72F] uppercase font-bold block mb-2">ASSURANCE</span>
+          <p class="text-[#F7F1E7]/70 mb-3">All sweets prepared with 100% pure cow desi ghee and zero preservatives.</p>
+          <span class="px-3 py-1 rounded bg-[#E5A72F] text-[#180306] font-mono font-bold text-[10px]">FSSAI CERTIFIED</span>
+        </div>
+      </div>
+      <div class="pt-6 text-center text-xs font-mono text-[#F7F1E7]/50">
+        © 2026 The Lyallpur Store. All rights reserved. Handcrafted in Ludhiana, Punjab.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Catalogue Data & Logic -->
+  <script>
+    const PRODUCTS = [
+      {
+        id: 'chana-barfi',
+        name: 'Signature Chana Barfi',
+        punjabi: 'ਚਨਾ ਬਰਫ਼ੀ',
+        category: 'sweets',
+        desc: 'Our iconic signature sweet. Slow-roasted organic gram flour simmered in pure cow desi ghee, caramelized with rich khoya and garnished with Iranian pistachios.',
+        weights: [
+          { label: '400g Box', price: 360 },
+          { label: '800g Box', price: 710 },
+          { label: '1kg Gift Box', price: 880 }
+        ],
+        image: 'assets/images/lyallpur_dhoda_barfi_1789498301424.jpg',
+        badge: 'Bestseller · Pure Ghee',
+        ingredients: 'Organic Gram Flour, Pure Cow Desi Ghee, Khoya, Sugar, Pistachios, Almonds'
+      },
+      {
+        id: 'motichoor-laddu',
+        name: 'Desi Ghee Motichoor Laddu',
+        punjabi: 'ਮੋਤੀਚੂਰ ਲੱਡੂ',
+        category: 'sweets',
+        desc: 'Micro-pearl besan droplets fried in pure golden desi ghee and steeped in cardamom-scented syrup infused with hand-plucked Kashmiri saffron.',
+        weights: [
+          { label: '500g Box', price: 340 },
+          { label: '1kg Box', price: 660 }
+        ],
+        image: 'assets/images/lyallpur_motichoor_laddu_1789498314629.jpg',
+        badge: 'Royal Saffron',
+        ingredients: 'Gram Flour Pearls, Pure Cow Desi Ghee, Kashmiri Saffron, Cardamom, Melon Seeds'
+      },
+      {
+        id: 'royal-heritage-box',
+        name: 'Royal Heritage Gifting Casket',
+        punjabi: 'ਰਾਇਲ ਹੈਰੀਟੇਜ ਬਾਕਸ',
+        category: 'gifting',
+        desc: 'An embossed crimson and gold foil trousseau casket featuring Chana Barfi, Kesar Motichoor, Kaju Katli, and jumbo California almonds.',
+        weights: [
+          { label: '1.2kg Grand Casket', price: 1450 },
+          { label: '2.0kg Imperial Casket', price: 2400 }
+        ],
+        image: 'assets/images/lyallpur_gifting_box_1789498201866.jpg',
+        badge: 'Luxury Wedding Box',
+        ingredients: 'Assorted Pure Desi Ghee Sweets & Premium California Dry Fruits'
+      },
+      {
+        id: 'dhoda-barfi',
+        name: 'Authentic Punjabi Dhoda',
+        punjabi: 'ਢੋਡਾ ਬਰਫ਼ੀ',
+        category: 'sweets',
+        desc: 'Traditional sprouted wheat fudge simmered with full-cream milk and pure desi ghee for over 10 hours until deep mahogany perfection.',
+        weights: [
+          { label: '400g Box', price: 380 },
+          { label: '800g Box', price: 740 }
+        ],
+        image: 'assets/images/lyallpur_dhoda_barfi_1789498301424.jpg',
+        badge: 'Ancestral Recipe',
+        ingredients: 'Sprouted Wheat (Angoori), Buffalo Milk, Pure Desi Ghee, Cashews, Almonds'
+      },
+      {
+        id: 'punjabi-gachak',
+        name: 'Gur Peanut Gachak',
+        punjabi: 'ਗੁੜ ਮੂੰਗਫਲੀ ਗੱਚਕ',
+        category: 'gachak',
+        desc: 'Crisp organic sugarcane jaggery brittle blended with roasted Malwa peanuts. A legendary winter staple of Punjab celebrated across generations.',
+        weights: [
+          { label: '400g Box', price: 220 },
+          { label: '800g Box', price: 420 }
+        ],
+        image: 'assets/images/lyallpur_punjabi_gachak_1789498330845.jpg',
+        badge: 'Winter Classic',
+        ingredients: 'Organic Cane Jaggery (Gur), Roasted Peanuts, Cardamom, Pure Ghee'
+      },
+      {
+        id: 'punjabi-mathi',
+        name: 'Traditional Ajwain Mathi',
+        punjabi: 'ਅਜਵਾਇਨ ਮੱਠੀ',
+        category: 'namkeen',
+        desc: 'Flaky, savory round crackers infused with whole carom seeds and hand-crushed black peppercorns. The eternal companion to steaming Punjabi chai.',
+        weights: [
+          { label: '400g Box', price: 180 },
+          { label: '800g Box', price: 340 }
+        ],
+        image: 'assets/images/lyallpur_punjabi_mathi_1789498344505.jpg',
+        badge: 'Crisp Savoury',
+        ingredients: 'Wheat Flour, Pure Desi Ghee Shortening, Carom Seeds (Ajwain), Black Pepper, Rock Salt'
+      },
+      {
+        id: 'shahi-thandai',
+        name: 'Shahi Kesar Badam Thandai',
+        punjabi: 'ਸ਼ਾਹੀ ਠੰਢਾਈ',
+        category: 'sweets',
+        desc: 'Concentrated cooling nectar prepared from blanched almonds, pistachios, poppy seeds, crushed rose petals, and pure Kashmiri saffron threads.',
+        weights: [
+          { label: '750ml Glass Bottle', price: 380 }
+        ],
+        image: 'assets/images/lyallpur_desi_ghee_1789498186551.jpg',
+        badge: 'Royal Beverage',
+        ingredients: 'Mamra Almonds, Pistachios, Kashmiri Saffron, Rose Petals, Melon Seeds, Fennel'
+      },
+      {
+        id: 'sweets-sampler',
+        name: 'Model Town Four-Delight Box',
+        punjabi: 'ਸਪੈਸ਼ਲ ਮਿਠਾਈ ਬਾਕਸ',
+        category: 'gifting',
+        desc: 'The complete tasting journey containing equal quarters of Chana Barfi, Motichoor Laddu, Roasted Kalakand, and Kaju Katli.',
+        weights: [
+          { label: '800g Tasting Box', price: 790 },
+          { label: '1.2kg Family Box', price: 1150 }
+        ],
+        image: 'assets/images/lyallpur_hero_sweets_1789498173011.jpg',
+        badge: 'All-In-One Box',
+        ingredients: 'Four Signature Sweets in Pure Cow Desi Ghee'
+      }
+    ];
+
+    let currentCategory = 'all';
+    let selectedWeights = {};
+
+    function setCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.cat-pill').forEach(btn => {
+        btn.classList.remove('bg-[#180306]', 'text-[#F7F1E7]', 'active');
+        btn.classList.add('bg-[#EFE4D0]', 'text-[#180306]');
+      });
+      event.target.classList.add('bg-[#180306]', 'text-[#F7F1E7]', 'active');
+      event.target.classList.remove('bg-[#EFE4D0]', 'text-[#180306]');
+      renderProducts();
+    }
+
+    function renderProducts() {
+      const query = (document.getElementById('searchInput')?.value || '').toLowerCase();
+      const container = document.getElementById('productGrid');
+      if (!container) return;
+
+      const filtered = PRODUCTS.filter(p => {
+        const matchesCat = currentCategory === 'all' || p.category === currentCategory;
+        const matchesQuery = p.name.toLowerCase().includes(query) || p.desc.toLowerCase().includes(query);
+        return matchesCat && matchesQuery;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<div class="col-span-full text-center py-16 font-serif italic text-lg text-[#180306]/60">No delicacies found matching your search.</div>`;
+        return;
+      }
+
+      container.innerHTML = filtered.map(p => {
+        const currentWeightIdx = selectedWeights[p.id] || 0;
+        const currentOption = p.weights[currentWeightIdx] || p.weights[0];
+
+        return `
+          <div class="bg-white rounded-2xl border-2 border-[#180306] p-4 shadow-paper flex flex-col justify-between group hover:-translate-y-1 transition-transform">
+            <div>
+              <div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-[#180306] mb-3">
+                <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <span class="absolute top-2 left-2 bg-[#E5A72F] text-[#180306] text-[10px] font-mono font-bold px-2 py-0.5 rounded shadow">
+                  ${p.badge}
+                </span>
+                <button onclick="openQuickView('${p.id}')" class="absolute bottom-2 right-2 bg-white/90 hover:bg-white text-[#180306] text-xs font-serif font-bold px-2.5 py-1 rounded shadow cursor-pointer">
+                  Quick View ↗
+                </button>
+              </div>
+
+              <div class="flex justify-between items-start mb-1">
+                <div>
+                  <h3 class="font-serif font-bold text-base text-[#180306] leading-tight">${p.name}</h3>
+                  <span class="text-xs text-[#E4702A] font-mono">${p.punjabi}</span>
+                </div>
+                <div class="text-right">
+                  <span id="price-${p.id}" class="font-serif font-black text-lg text-[#180306]">₹${currentOption.price}</span>
+                </div>
+              </div>
+
+              <p class="text-xs font-sans text-[#180306]/75 line-clamp-2 my-2 leading-relaxed">
+                ${p.desc}
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-[#180306]/10 space-y-2.5">
+              <div class="flex items-center gap-1.5 overflow-x-auto pb-1">
+                ${p.weights.map((w, idx) => `
+                  <button onclick="changeWeight('${p.id}', ${idx})" class="text-[10px] font-mono px-2 py-1 rounded border ${idx === currentWeightIdx ? 'bg-[#180306] text-white border-[#180306]' : 'bg-[#F7F1E7] text-[#180306] border-[#180306]/20 hover:border-[#180306]'} cursor-pointer">
+                    ${w.label}
+                  </button>
+                `).join('')}
+              </div>
+
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="addToCart('${p.id}', '${p.name}', '${currentOption.label}', ${currentOption.price}, '${p.image}')" class="w-full py-2.5 rounded-lg bg-[#180306] text-[#F7F1E7] font-serif font-bold text-xs uppercase tracking-wider hover:bg-[#E5A72F] hover:text-[#180306] transition-colors cursor-pointer shadow-sm">
+                  Add to Cart +
+                </button>
+                <button onclick="buyNowDirect('${p.id}', '${p.name}', '${currentOption.label}', ${currentOption.price}, '${p.image}')" class="w-full py-2.5 rounded-lg bg-[#E5A72F] text-[#180306] font-serif font-bold text-xs uppercase tracking-wider hover:bg-[#C98F20] transition-colors cursor-pointer shadow-sm">
+                  Order Now →
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function changeWeight(productId, weightIdx) {
+      selectedWeights[productId] = weightIdx;
+      renderProducts();
+    }
+
+    function openQuickView(productId) {
+      const p = PRODUCTS.find(x => x.id === productId);
+      if (!p) return;
+      const modal = document.getElementById('quickViewModal');
+      const backdrop = document.getElementById('quickViewBackdrop');
+      const body = document.getElementById('modalBody');
+
+      body.innerHTML = `
+        <div class="flex justify-between items-start mb-4">
+          <div>
+            <span class="text-xs font-mono text-[#E4702A] font-bold uppercase">${p.category} · ${p.badge}</span>
+            <h2 class="font-serif text-2xl font-black text-[#180306]">${p.name}</h2>
+          </div>
+          <button onclick="closeQuickView()" class="p-1 hover:bg-black/10 rounded-full cursor-pointer"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 my-4">
+          <img src="${p.image}" alt="${p.name}" class="w-full aspect-[4/3] object-cover rounded-xl border border-[#180306]/20 bg-[#180306]" />
+          <div class="space-y-3 text-xs">
+            <p class="font-sans text-sm text-[#180306]/85 leading-relaxed">${p.desc}</p>
+            <div class="bg-white p-3 rounded-lg border border-[#180306]/15">
+              <strong class="font-serif text-[#180306] block mb-1">Pure Ingredients:</strong>
+              <span class="text-[#180306]/75">${p.ingredients}</span>
+            </div>
+            <div class="flex justify-between items-center text-sm font-serif font-bold pt-2">
+              <span>Starting From:</span>
+              <span class="text-lg font-black text-[#180306]">₹${p.weights[0].price}</span>
+            </div>
+            <button onclick="addToCart('${p.id}', '${p.name}', '${p.weights[0].label}', ${p.weights[0].price}, '${p.image}'); closeQuickView();" class="w-full py-3 rounded-xl bg-[#180306] text-[#F7F1E7] font-serif font-bold uppercase tracking-wider hover:bg-[#E5A72F] hover:text-[#180306] transition-colors cursor-pointer shadow-paper">
+              Add To Sweet Box +
+            </button>
+          </div>
+        </div>
+      `;
+      lucide.createIcons();
+      backdrop.classList.remove('hidden');
+      modal.classList.remove('hidden');
+      setTimeout(() => backdrop.classList.remove('opacity-0'), 10);
+    }
+
+    function closeQuickView() {
+      const modal = document.getElementById('quickViewModal');
+      const backdrop = document.getElementById('quickViewBackdrop');
+      backdrop.classList.add('opacity-0');
+      setTimeout(() => {
+        backdrop.classList.add('hidden');
+        modal.classList.add('hidden');
+      }, 250);
+    }
+
+    // Cart management
+    let cart = JSON.parse(localStorage.getItem('lyallpur_cart') || '[]');
+    function saveCart() {
+      localStorage.setItem('lyallpur_cart', JSON.stringify(cart));
+      updateCartUI();
+    }
+
+    function addToCart(id, name, weight, price, image) {
+      const existing = cart.find(item => item.id === id && item.weight === weight);
+      if (existing) existing.qty += 1;
+      else cart.push({ id, name, weight, price, image, qty: 1 });
+      saveCart();
+      openCart();
+    }
+
+    function buyNowDirect(id, name, weight, price, image) {
+      addToCart(id, name, weight, price, image);
+      checkoutWhatsApp();
+    }
+
+    function updateQty(index, delta) {
+      if (!cart[index]) return;
+      cart[index].qty += delta;
+      if (cart[index].qty <= 0) cart.splice(index, 1);
+      saveCart();
+    }
+
+    function updateCartUI() {
+      const totalCount = cart.reduce((s, i) => s + i.qty, 0);
+      const subtotal = cart.reduce((s, i) => s + (i.price * i.qty), 0);
+      const badge = document.getElementById('navCartBadge');
+      if (badge) badge.innerText = totalCount;
+      const drawerCount = document.getElementById('cartDrawerCount');
+      if (drawerCount) drawerCount.innerText = totalCount;
+      const subtotalEl = document.getElementById('cartSubtotal');
+      if (subtotalEl) subtotalEl.innerText = '₹' + subtotal.toLocaleString('en-IN');
+
+      const list = document.getElementById('cartItemsList');
+      if (!list) return;
+
+      if (cart.length === 0) {
+        list.innerHTML = `<div class="text-center py-12 text-[#180306]/60 font-serif italic">Your sweet box is empty. Choose some fresh delights!</div>`;
+      } else {
+        list.innerHTML = cart.map((item, idx) => `
+          <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-[#180306]/15 shadow-sm">
+            <img src="${item.image}" alt="${item.name}" class="w-14 h-14 object-cover rounded-lg bg-[#180306]" />
+            <div class="flex-1">
+              <h4 class="font-serif font-bold text-xs text-[#180306] leading-tight">${item.name}</h4>
+              <span class="text-[10px] text-[#E4702A] font-mono">${item.weight}</span>
+              <div class="font-serif font-black text-xs text-[#180306] mt-0.5">₹${item.price * item.qty}</div>
+            </div>
+            <div class="flex items-center gap-2 bg-[#F7F1E7] px-2 py-1 rounded-full border border-[#180306]/20">
+              <button onclick="updateQty(${idx}, -1)" class="w-5 h-5 flex items-center justify-center font-bold text-xs">-</button>
+              <span class="text-xs font-mono font-bold">${item.qty}</span>
+              <button onclick="updateQty(${idx}, 1)" class="w-5 h-5 flex items-center justify-center font-bold text-xs">+</button>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
+    function toggleCart() {
+      const drawer = document.getElementById('cartDrawer');
+      const backdrop = document.getElementById('cartBackdrop');
+      if (!drawer || !backdrop) return;
+      const isOpen = !drawer.classList.contains('translate-x-full');
+      if (isOpen) {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.add('opacity-0');
+        setTimeout(() => backdrop.classList.add('hidden'), 300);
+      } else {
+        updateCartUI();
+        backdrop.classList.remove('hidden');
+        setTimeout(() => {
+          backdrop.classList.remove('opacity-0');
+          drawer.classList.remove('translate-x-full');
+        }, 10);
+      }
+    }
+
+    function openCart() {
+      const drawer = document.getElementById('cartDrawer');
+      if (drawer && drawer.classList.contains('translate-x-full')) toggleCart();
+      else updateCartUI();
+    }
+
+    function checkoutWhatsApp() {
+      if (cart.length === 0) return alert('Your cart is empty!');
+      let msg = "*ORDER ENQUIRY - THE LYALLPUR STORE (ONLINE SHOP)*\\n\\n";
+      let total = 0;
+      cart.forEach((i, idx) => {
+        const itemTotal = i.price * i.qty;
+        total += itemTotal;
+        msg += `${idx + 1}. ${i.name} (${i.weight}) x ${i.qty} = ₹${itemTotal}\\n`;
+      });
+      msg += `\\n*Total Amount:* ₹${total}\\n*Delivery Address required on confirmation*`;
+      window.open(`https://wa.me/919814000000?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu')?.classList.toggle('hidden');
+    }
+
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = (window.scrollY / h) * 100;
+      const prog = document.getElementById('scrollProgress');
+      if (prog) prog.style.width = pct + '%';
+    });
+
+    renderProducts();
+    updateCartUI();
+    lucide.createIcons();
+  </script>
+</body>
+</html>
